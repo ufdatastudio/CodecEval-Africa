@@ -1,0 +1,45 @@
+# Test configuration for pipeline validation
+# Using only working codecs for initial testing
+
+# Single bitrate for quick testing
+bitrate_kbps: [6]
+
+# All working codecs
+codecs:
+  - name: encodec_24khz
+    runner: code.codecs.encodec_runner:EncodecRunner
+    args: { bandwidth_kbps: "${bitrate_kbps}", causal: true, sr: 24000 }
+    
+  - name: soundstream_impl
+    runner: code.codecs.soundstream_runner:SoundStreamRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: unicodec
+    runner: code.codecs.unicodec_runner:UniCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: dac
+    runner: code.codecs.dac_runner:DACRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: sematicodec
+    runner: code.codecs.sematicodec_runner:SemantiCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: apcodec
+    runner: code.codecs.apcodec_runner:APCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+
+# Tiny dataset for testing
+datasets:
+  - data/manifests/afrispeech_dialog_tiny.yaml
+
+# Basic metrics
+metrics:
+  - nisqa
+  - visqol
+
+# Output configuration
+outputs:
+  dir: results/test
+seed: 2025

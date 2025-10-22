@@ -1,0 +1,26 @@
+bitrate_kbps: [3, 12]  # Dry-run: just 2 bitrates for speed
+frame_ms: [10, 20, 40]
+conditions:
+  noise_snr_db: [null, 20, 10]
+  reverb: [none, small_room]
+  net_loss_pct: [0, 3, 5, 10]
+codecs:
+  - name: encodec_24khz
+    runner: code.codecs.encodec_runner:EncodecRunner
+    args: { bandwidth_kbps: "${bitrate_kbps}", causal: true }
+  - name: soundstream_impl
+    runner: code.codecs.soundstream_runner:SoundStreamRunner
+    args: { bitrate_kbps: "${bitrate_kbps}" }
+datasets:
+  - data/manifests/afri_names_tiny.yaml
+  - data/manifests/afrispeech_dialog_tiny.yaml
+metrics:
+  - visqol
+  - nisqa
+  - dnsmos
+  - asr_wer
+  - speaker_cosine
+  - prosody_f0_rmse
+outputs:
+  dir: results
+seed: 2025

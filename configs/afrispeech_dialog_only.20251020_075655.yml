@@ -1,0 +1,66 @@
+# AfriSpeech-Dialog Codec Evaluation Configuration
+# Focus on AfriSpeech-Dialog dataset with 6 neural codecs
+
+# Bitrates for comprehensive evaluation (EnCodec compatible)
+bitrate_kbps: [3, 6, 12, 24]  # EnCodec supports: [1.5, 3.0, 6, 12.0, 24.0]
+
+# All 6 neural codecs for comprehensive evaluation
+codecs:
+  - name: encodec_24khz
+    runner: code.codecs.encodec_runner:EncodecRunner
+    args: { bandwidth_kbps: "${bitrate_kbps}", causal: true, sr: 24000 }
+    
+  - name: soundstream_impl
+    runner: code.codecs.soundstream_runner:SoundStreamRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: unicodec
+    runner: code.codecs.unicodec_runner:UniCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: dac
+    runner: code.codecs.dac_runner:DACRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: sematicodec
+    runner: code.codecs.sematicodec_runner:SemantiCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: apcodec
+    runner: code.codecs.apcodec_runner:APCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+
+# AfriSpeech-Dialog dataset only
+datasets:
+  - data/manifests/afrispeech_dialog_balanced.yaml
+
+# Comprehensive metrics suite
+metrics:
+  # Quality metrics
+  - visqol              # Perceptual quality
+  - nisqa               # Speech quality prediction
+  - dnsmos              # Noise suppression quality
+  
+  # ASR metrics (critical for African languages)
+  - asr_wer             # Word Error Rate
+  
+  # Speaker preservation
+  - speaker_cosine      # Voice similarity
+  
+  # Prosodic features
+  - prosody_f0_rmse     # Pitch preservation
+
+# Output configuration
+outputs:
+  dir: results/afrispeech_dialog
+  formats: [csv, json]  # Multiple formats for analysis
+  
+# Reproducibility
+seed: 2025
+
+# Performance settings
+performance:
+  gpu_acceleration: true
+  batch_size: 16
+  num_workers: 4
+  cache_audio: true

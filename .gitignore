@@ -1,0 +1,79 @@
+# Virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Audio files (large files to exclude)
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.wma
+
+# Data directories with audio
+data/afrispeech_dialog/data/
+data/afrispeech_samples/
+data/afrispeech_dialog/
+results/decoded/
+results/afrispeech_dialog/decoded/
+results/test/decoded/
+results/test_single/decoded/
+encodec_validation_output/
+quick_cpu_test_output/
+diagnosis_output/
+
+# SLURM job outputs
+slurm-*.out
+slurm-*.err
+*.out
+*.err
+
+# Logs
+logs/
+*.log
+
+# Cache directories
+.cache/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Large model files (if any)
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+
+
+# Test outputs
+test_*.py
+test_*.out
+test_*.err

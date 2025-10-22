@@ -1,0 +1,12 @@
+dataset: intronhealth/afrispeech-dialog
+split: small_dialog_test
+sampling_rate: 24000
+items:
+  - id: dlg_ng_001
+    accent: Nigerian
+    path: hf://intronhealth/afrispeech-dialog/audio/dlg_ng_001.wav
+    transcript: "yeah, I think the meeting moved to Friday..."
+  - id: dlg_ke_012
+    accent: Kenyan
+    path: hf://intronhealth/afrispeech-dialog/audio/dlg_ke_012.wav
+    transcript: "let's call back in ten minutes"

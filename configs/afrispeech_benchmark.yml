@@ -1,0 +1,88 @@
+# AfriSpeech Comprehensive Codec Evaluation Configuration
+# Focus on AfriSpeech-Dialog and AfriSpeech-200 datasets
+
+# Bitrates for comprehensive evaluation
+bitrate_kbps: [3, 6, 12, 18, 24]  # Full range: mobile to high-quality
+
+# Frame sizes for temporal analysis
+frame_ms: [10, 20, 40]
+
+# Network conditions (for future network impairment studies)
+conditions:
+  noise_snr_db: [null, 20, 10]
+  reverb: [none, small_room]
+  net_loss_pct: [0, 3, 5, 10]
+
+# All 6 neural codecs for comprehensive evaluation
+codecs:
+  - name: encodec_24khz
+    runner: code.codecs.encodec_runner:EncodecRunner
+    args: { bandwidth_kbps: "${bitrate_kbps}", causal: true, sr: 24000 }
+    
+  - name: soundstream_impl
+    runner: code.codecs.soundstream_runner:SoundStreamRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: unicodec
+    runner: code.codecs.unicodec_runner:UniCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: dac
+    runner: code.codecs.dac_runner:DACRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: sematicodec
+    runner: code.codecs.sematicodec_runner:SemantiCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+    
+  - name: apcodec
+    runner: code.codecs.apcodec_runner:APCodecRunner
+    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
+
+# AfriSpeech datasets (primary focus)
+datasets:
+  - data/manifests/afrispeech_dialog_balanced.yaml
+  - data/manifests/afrispeech_200_balanced.yaml
+
+# Comprehensive metrics suite
+metrics:
+  # Quality metrics
+  - visqol              # Perceptual quality
+  - nisqa               # Speech quality prediction
+  - dnsmos              # Noise suppression quality
+  
+  # ASR metrics (critical for African languages)
+  - asr_wer             # Word Error Rate
+  - asr_cer             # Character Error Rate (for tonal languages)
+  
+  # Speaker preservation
+  - speaker_cosine      # Voice similarity
+  
+  # Prosodic features
+  - prosody_f0_rmse     # Pitch preservation
+  
+  # Compression metrics (new)
+  - compression_ratio   # File size efficiency
+  - bitrate_accuracy    # Target vs actual bitrate
+
+# Output configuration
+outputs:
+  dir: results
+  formats: [csv, json, parquet]  # Multiple formats for analysis
+  
+# Reproducibility
+seed: 2025
+
+# Performance settings
+performance:
+  gpu_acceleration: true
+  batch_size: 16
+  num_workers: 4
+  cache_audio: true
+  
+# Analysis settings
+analysis:
+  accent_specific: true
+  statistical_testing: true
+  confidence_intervals: 0.95
+  significance_level: 0.05

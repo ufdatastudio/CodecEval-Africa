@@ -1,0 +1,27 @@
+numpy
+scipy
+pandas
+matplotlib
+librosa>=0.10
+soundfile
+# Install PyTorch with CUDA 12.8 support for B200 GPU
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch
+torchaudio
+torchvision
+tqdm
+pyyaml
+einops
+# Metrics (placeholders – pin real packages when you integrate):
+# visqol==<version>      # provide binding or local build
+# nisqa==<version>
+# dnsmos==<version>
+# ASR, speaker embeddings, F0 extraction, etc.:
+transformers
+datasets
+jiwer
+pyworld
+# Real codec implementations
+encodec
+# For SoundStream alternative - we'll use a maintained implementation
+# You may need to install from specific repos or use alternatives

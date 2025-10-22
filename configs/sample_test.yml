@@ -1,0 +1,25 @@
+bitrate_kbps: [6]
+frame_ms: [20]
+conditions:
+  noise_snr_db: [null]
+  reverb: [none]
+  net_loss_pct: [0]
+codecs:
+  - name: encodec_24khz
+    runner: code.codecs.encodec_runner:EncodecRunner
+    args: { bandwidth_kbps: "${bitrate_kbps}", causal: true }
+  - name: soundstream_impl
+    runner: code.codecs.soundstream_runner:SoundStreamRunner
+    args: { bitrate_kbps: "${bitrate_kbps}" }
+datasets:
+  - data/manifests/test_short.yaml
+metrics:
+  - visqol
+  - nisqa
+  - dnsmos
+  - asr_wer
+  - speaker_cosine
+  - prosody_f0_rmse
+outputs:
+  dir: results
+seed: 2025
