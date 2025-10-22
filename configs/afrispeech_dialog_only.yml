@@ -1,18 +1,14 @@
 # AfriSpeech-Dialog Codec Evaluation Configuration
-# Focus on AfriSpeech-Dialog dataset with 6 neural codecs
+# Focus on AfriSpeech-Dialog dataset with 5 neural codecs
 
 # Bitrates for comprehensive evaluation (EnCodec compatible)
 bitrate_kbps: [3, 6, 12, 24]  # EnCodec supports: [1.5, 3.0, 6, 12.0, 24.0]
 
-# All 6 neural codecs for comprehensive evaluation
+# All 5 neural codecs for comprehensive evaluation (SoundStream removed - identical to EnCodec)
 codecs:
   - name: encodec_24khz
     runner: code.codecs.encodec_runner:EncodecRunner
     args: { bandwidth_kbps: "${bitrate_kbps}", causal: true, sr: 24000 }
-    
-  - name: soundstream_impl
-    runner: code.codecs.soundstream_runner:SoundStreamRunner
-    args: { bitrate_kbps: "${bitrate_kbps}", sr: 24000 }
     
   - name: unicodec
     runner: code.codecs.unicodec_runner:UniCodecRunner

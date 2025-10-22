@@ -13,11 +13,6 @@ CODEC_REGISTRY = {
         "status": "working",
         "description": "Meta's EnCodec - causal processing"
     },
-    "soundstream_impl": {
-        "runner": "code.codecs.soundstream_runner:SoundStreamRunner", 
-        "status": "working",
-        "description": "EnCodec-based SoundStream - non-causal processing"
-    },
     
     # New codecs (placeholders - safe to add)
     "unicodec": {

@@ -11,7 +11,7 @@ import numpy as np
 import soundfile as sf
 import hashlib
 from code.codecs.encodec_runner import EncodecRunner
-from code.codecs.soundstream_runner import SoundStreamRunner
+# SoundStream removed - identical to EnCodec
 
 def get_file_hash(filepath):
     """Get SHA1 hash of file."""
@@ -123,25 +123,10 @@ def validate_encodec_compression():
                 "error": str(e)
             })
     
-    # Test SoundStream for comparison
-    print(f"\n=== SOUNDSTREAM COMPARISON ===")
-    try:
-        runner = SoundStreamRunner(bitrate_kbps=6, sr=16000)
-        soundstream_output = f"{output_dir}/soundstream_6kbps.wav"
-        runner.run(test_file, soundstream_output)
-        
-        soundstream_stats = get_audio_stats(soundstream_output)
-        soundstream_hash = get_file_hash(soundstream_output)
-        soundstream_compression = original_stats['file_size'] / soundstream_stats['file_size']
-        
-        print(f"✅ SoundStream 6kbps:")
-        print(f"   Output: {soundstream_output}")
-        print(f"   Size: {soundstream_stats['file_size']:,} bytes")
-        print(f"   Compression: {soundstream_compression:.2f}x")
-        print(f"   Hash: {soundstream_hash}")
-        
-    except Exception as e:
-        print(f"❌ SoundStream: FAILED - {e}")
+    # SoundStream removed - it was identical to EnCodec
+    print(f"\n=== SOUNDSTREAM REMOVED ===")
+    print(f"SoundStream was removed because it produces identical outputs to EnCodec.")
+    print(f"This avoids redundant evaluation and focuses on truly different codecs.")
     
     # Summary
     print(f"\n=== VALIDATION SUMMARY ===")
