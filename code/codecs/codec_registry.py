@@ -34,6 +34,11 @@ CODEC_REGISTRY = {
         "runner": "code.codecs.apcodec_runner:APCodecRunner", 
         "status": "working",
         "description": "Adaptive Perceptual Codec (perceptual loss-based)"
+    },
+    "languagecodec": {
+        "runner": "code.codecs.languagecodec_runner:LanguageCodecRunner",
+        "status": "working",
+        "description": "LanguageCodec - Language-specific discrete token representation"
     }
 }
 

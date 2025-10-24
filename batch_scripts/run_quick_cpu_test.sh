@@ -15,12 +15,11 @@ echo "Working directory: $(pwd)"
 # Activate virtual environment
 source .venv/bin/activate
 
-# Test CPU-only approach with shorter audio
+# Test all 6 codecs (CPU-only)
 python -c "
 import sys
 sys.path.append('.')
-from code.codecs.encodec_runner import EncodecRunner
-from code.codecs.soundstream_runner import SoundStreamRunner
+from code.codecs.codec_registry import get_codec_runner
 import os
 
 # Test with a shorter audio file
@@ -29,23 +28,32 @@ output_dir = 'quick_cpu_test_output'
 
 os.makedirs(output_dir, exist_ok=True)
 
-print('Testing EnCodec (CPU-only)...')
-try:
-    runner1 = EncodecRunner(bandwidth_kbps=6, causal=True, sr=16000)
-    runner1.run(test_file, f'{output_dir}/encodec_cpu.wav')
-    print('✅ EnCodec CPU: SUCCESS')
-except Exception as e:
-    print(f'❌ EnCodec CPU: FAILED - {e}')
+# Test all 6 codecs
+codecs_to_test = [
+    'encodec_24khz',
+    'unicodec', 
+    'dac',
+    'sematicodec',
+    'apcodec',
+    'languagecodec'
+]
 
-print('Testing SoundStream (CPU-only)...')
-try:
-    runner2 = SoundStreamRunner(bitrate_kbps=6, sr=16000)
-    runner2.run(test_file, f'{output_dir}/soundstream_cpu.wav')
-    print('✅ SoundStream CPU: SUCCESS')
-except Exception as e:
-    print(f'❌ SoundStream CPU: FAILED - {e}')
+print('=== TESTING ALL 6 CODECS (CPU-ONLY) ===')
+for codec_name in codecs_to_test:
+    print(f'Testing {codec_name}...')
+    try:
+        if 'encodec' in codec_name:
+            runner = get_codec_runner(codec_name, bandwidth_kbps=6.0, causal=True, sr=16000, device='cpu')
+        else:
+            runner = get_codec_runner(codec_name, bitrate_kbps=6.0, sr=16000, device='cpu')
+        
+        output_file = f'{output_dir}/{codec_name}_cpu.wav'
+        runner.run(test_file, output_file)
+        print(f'✅ {codec_name}: SUCCESS')
+    except Exception as e:
+        print(f'❌ {codec_name}: FAILED - {e}')
 
-print('=== CPU-ONLY TEST COMPLETE ===')
+print('=== ALL 6 CODECS TEST COMPLETE ===')
 "
 
 echo "=== QUICK CPU TEST COMPLETE ==="
