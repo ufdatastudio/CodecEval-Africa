@@ -32,6 +32,11 @@ encodec_validation_output/
 quick_cpu_test_output/
 diagnosis_output/
 
+# Codec outputs (reconstructed audio)
+outputs/
+outputs/Encodec_outputs/
+outputs/DAC_outputs/
+
 # SLURM job outputs
 slurm-*.out
 slurm-*.err
@@ -70,6 +75,12 @@ Thumbs.db
 *.pt
 *.bin
 *.safetensors
+*.ckpt
+*.npy
+
+# Pretrained model directories
+code/codecs/pretrained/
+**/pretrained/
 
 
 

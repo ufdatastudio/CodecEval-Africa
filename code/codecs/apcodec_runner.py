@@ -1,146 +1,62 @@
-import time
-from typing import Dict, Any, Optional
+"""
+APCodec Batch Evaluation Script
+-------------------------------
+Author: Chibuzor Okocha
+Purpose: Encode & decode all audio files in a folder using pretrained APCodec (YangAi520/APCodec)
+"""
 
-import numpy as np
+import os
 import torch
+import soundfile as sf
+import torchaudio
+from tqdm import tqdm
+from model.apcodec import APCodecModel  # from YangAi520/APCodec repo
 
-def _load_wav(path: str, sr: int) -> np.ndarray:
-    import soundfile as sf
-    wav, srx = sf.read(path, always_2d=False)
-    if srx != sr:
-        import librosa
-        wav = librosa.resample(wav.astype(float), orig_sr=srx, target_sr=sr)
-    if wav.ndim == 1:
-        wav = wav[None, :]
-    return wav
+def run_apcodec_folder(input_dir, output_root, ckpt_path, sr=24000):
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Using device: {device}")
 
-def _save_wav(wav: np.ndarray, path: str, sr: int):
-    import soundfile as sf
-    x = wav
-    if x.ndim == 2 and x.shape[0] == 1:
-        x = x[0]
-    sf.write(path, x, sr)
+    # Load pretrained checkpoint
+    model = APCodecModel.load_from_checkpoint(ckpt_path)
+    model = model.eval().to(device)
 
-class APCodecRunner:
-    def __init__(self, bitrate_kbps: float = 3.0, sr: int = 24000, device: Optional[str] = None, **model_kwargs):
-        self.sr = sr
-        self.bitrate_kbps = bitrate_kbps
-        self.device = torch.device(device) if device is not None else (torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"))
-        
-        # Implement adaptive perceptual codec using perceptual loss
-        print(f"APCodec runner initialized (adaptive perceptual implementation) at {bitrate_kbps} kbps")
-        self.model = self._create_adaptive_codec()
-        self.model.to(self.device).eval()
-        
-    def _create_adaptive_codec(self):
-        """Create an adaptive perceptual codec with perceptual loss."""
-        class AdaptiveCodec(torch.nn.Module):
-            def __init__(self, bitrate_kbps):
-                super().__init__()
-                self.bitrate_kbps = bitrate_kbps
-                
-                # Adaptive encoder with perceptual features
-                self.perceptual_encoder = torch.nn.Sequential(
-                    torch.nn.Conv1d(1, 96, 11, stride=3, padding=5),
-                    torch.nn.ReLU(),
-                    torch.nn.Conv1d(96, 192, 11, stride=3, padding=5),
-                    torch.nn.ReLU(),
-                    torch.nn.Conv1d(192, 384, 11, stride=3, padding=5),
-                    torch.nn.ReLU(),
-                )
-                
-                # Perceptual feature extractor
-                self.perceptual_extractor = torch.nn.Sequential(
-                    torch.nn.Conv1d(384, 192, 5, padding=2),
-                    torch.nn.ReLU(),
-                    torch.nn.Conv1d(192, 96, 5, padding=2),
-                    torch.nn.ReLU(),
-                )
-                
-                # Adaptive decoder
-                self.adaptive_decoder = torch.nn.Sequential(
-                    torch.nn.ConvTranspose1d(384, 192, 11, stride=3, padding=5, output_padding=2),
-                    torch.nn.ReLU(),
-                    torch.nn.ConvTranspose1d(192, 96, 11, stride=3, padding=5, output_padding=2),
-                    torch.nn.ReLU(),
-                    torch.nn.ConvTranspose1d(96, 1, 11, stride=3, padding=5, output_padding=2),
-                )
-                
-            def forward(self, x):
-                # Encode to perceptual features
-                perceptual_features = self.perceptual_encoder(x)
-                
-                # Extract perceptual information
-                perceptual_info = self.perceptual_extractor(perceptual_features)
-                
-                # Adaptive quantization based on perceptual importance
-                # Higher quantization for less perceptually important features
-                adaptive_scale = torch.sigmoid(perceptual_info.mean(dim=1, keepdim=True))
-                perceptual_quantized = torch.round(perceptual_features * adaptive_scale * 150) / 150
-                
-                # Decode with adaptive features
-                decoded = self.adaptive_decoder(perceptual_quantized)
-                
-                return decoded
-                
-        return AdaptiveCodec(self.bitrate_kbps)
+    os.makedirs(output_root, exist_ok=True)
 
-    def run(self, in_wav_path: str, out_wav_path: str) -> Dict[str, Any]:
-        """Run APCodec encoding/decoding."""
+    # Gather all .wav files
+    wav_files = [
+        os.path.join(r, f)
+        for r, _, fs in os.walk(input_dir)
+        for f in fs if f.lower().endswith(".wav")
+    ]
+    print(f"Found {len(wav_files)} audio files in {input_dir}")
+
+    for path in tqdm(wav_files, desc="APCodec Inference"):
+        filename = os.path.basename(path)
+        out_path = os.path.join(output_root, filename)
+
         try:
-            # Load audio
-            wav = _load_wav(in_wav_path, self.sr)
-            
-            # Convert to tensor
-            x = torch.from_numpy(wav).float().to(self.device)
-            if x.dim() == 1:
-                x = x.unsqueeze(0)  # Add channel dimension
-            if x.dim() == 2:
-                x = x.unsqueeze(0)  # Add batch dimension
-            
-            # Ensure mono
-            if x.shape[1] > 1:
-                x = x.mean(dim=1, keepdim=True)
-            
-            t0 = time.time()
-            
-            # Encode/decode with adaptive model
+            wav, file_sr = sf.read(path)
+            if file_sr != sr:
+                wav = torchaudio.functional.resample(torch.tensor(wav).unsqueeze(0), file_sr, sr).squeeze(0)
+            if wav.ndim > 1:
+                wav = wav.mean(dim=0)
+
+            x = wav.unsqueeze(0).unsqueeze(0).to(device)
+
             with torch.no_grad():
-                y = self.model(x)
-            
-            dt = time.time() - t0
-            
-            # Convert back to numpy
-            y = y.squeeze().cpu().numpy()
-            if y.ndim == 2:
-                y = y[0]  # Remove batch dimension
-            
-            # Save output
-            _save_wav(y, out_wav_path, self.sr)
-            
-            # Calculate metrics
-            num_seconds = wav.shape[-1] / float(self.sr)
-            rtf = dt / max(1e-9, num_seconds)
-            
-            return {
-                "codec": "apcodec",
-                "kbps": float(self.bitrate_kbps),
-                "sr_in": int(self.sr),
-                "sr_out": int(self.sr),
-                "elapsed_sec": float(dt),
-                "rtf": float(rtf),
-                "device": str(self.device),
-                "model_type": "adaptive_perceptual",
-            }
-            
+                z = model.encode(x)
+                y = model.decode(z)
+
+            sf.write(out_path, y.squeeze().cpu().numpy(), sr)
         except Exception as e:
-            print(f"APCodec error: {e}")
-            # Fallback: copy input to output
-            import shutil
-            shutil.copy2(in_wav_path, out_wav_path)
-            return {
-                "codec": "apcodec",
-                "kbps": float(self.bitrate_kbps),
-                "error": str(e),
-                "fallback": True
-            }
+            print(f" Error processing {filename}: {e}")
+
+    print(f"\n Completed reconstruction → {output_root}")
+
+# Example
+if __name__ == "__main__":
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/APCodec_outputs"
+    checkpoint = "/orange/ufdatastudios/c.okocha/APCodec/weights/apcodec_24khz.ckpt"  # update path
+
+    run_apcodec_folder(input_folder, output_folder, ckpt_path=checkpoint, sr=24000)

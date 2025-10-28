@@ -1,17 +1,19 @@
 """
-SemantiCodec Six-Bitrate Evaluation Script
+SemanticCodec Six-Bitrate Batch Evaluation
 ------------------------------------------
 Author: Chibuzor Okocha
-Purpose: Encode & decode local audio at six preset bitrates using SemantiCodec
+Purpose: Encode & decode all audio files in a folder
+         at six preset bitrates using SemantiCodec
 """
 
 import os
 import torch
 import soundfile as sf
+from tqdm import tqdm
 from semanticodec import SemantiCodec
 
 # ==============================
-# 1. Device configuration
+# 1. Device Configuration
 # ==============================
 device = (
     "cuda" if torch.cuda.is_available()
@@ -21,52 +23,67 @@ device = (
 print(f"Using device: {device}")
 
 # ==============================
-# 2. Input audio
+# 2. Input & Output Paths
 # ==============================
-filepath = "test/test.wav"   # 🔸 Change to your own file path
-assert os.path.exists(filepath), f"Audio file not found: {filepath}"
+input_dir = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
+output_root = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/SemantiCodec_outputs"
+os.makedirs(output_root, exist_ok=True)
 
 # ==============================
-# 3. Define six bitrate configs
+# 3. Bitrate Configurations
 # ==============================
 configs = [
-    {"token_rate": 25, "semantic_vocab_size": 4096,  "label": "0.31kbps"},
-    {"token_rate": 50, "semantic_vocab_size": 4096,  "label": "0.63kbps"},
-    {"token_rate": 100, "semantic_vocab_size": 4096, "label": "1.25kbps"},
-    {"token_rate": 25, "semantic_vocab_size": 8192,  "label": "0.33kbps"},
-    {"token_rate": 50, "semantic_vocab_size": 16384, "label": "0.68kbps"},
-    {"token_rate": 100, "semantic_vocab_size": 32768, "label": "1.40kbps"},
+    {"token_rate": 25,  "semantic_vocab_size": 4096,   "label": "0.31kbps"},
+    {"token_rate": 50,  "semantic_vocab_size": 4096,   "label": "0.63kbps"},
+    {"token_rate": 100, "semantic_vocab_size": 4096,   "label": "1.25kbps"},
+    {"token_rate": 25,  "semantic_vocab_size": 8192,   "label": "0.33kbps"},
+    {"token_rate": 50,  "semantic_vocab_size": 16384,  "label": "0.68kbps"},
+    {"token_rate": 100, "semantic_vocab_size": 32768,  "label": "1.40kbps"},
 ]
 
 # ==============================
-# 4. Loop through configs
+# 4. Gather Audio Files
+# ==============================
+audio_files = []
+for root, _, files in os.walk(input_dir):
+    for f in files:
+        if f.lower().endswith(".wav"):
+            audio_files.append(os.path.join(root, f))
+print(f"Found {len(audio_files)} audio files in {input_dir}")
+
+# ==============================
+# 5. Run SemantiCodec at 6 Bitrates
 # ==============================
 for cfg in configs:
-    print(f"\n--- Running SemantiCodec @ {cfg['label']} ---")
+    label = cfg["label"]
+    out_dir = os.path.join(output_root, label)
+    os.makedirs(out_dir, exist_ok=True)
 
+    print(f"\n--- Running SemantiCodec @ {label} ---")
     semanticodec = SemantiCodec(
         token_rate=cfg["token_rate"],
         semantic_vocab_size=cfg["semantic_vocab_size"]
     ).to(device)
 
-    # Encode
-    tokens = semanticodec.encode(filepath)
-    print(f"Encoded tokens shape: {tokens.shape}")
+    for audio_path in tqdm(audio_files, desc=f"{label}"):
+        filename = os.path.basename(audio_path)
+        try:
+            # Encode
+            tokens = semanticodec.encode(audio_path)
+            # Decode
+            waveform = semanticodec.decode(tokens)
 
-    # Decode
-    waveform = semanticodec.decode(tokens)
-    print(f"Decoded waveform shape: {waveform.shape}")
+            # Save reconstruction
+            out_path = os.path.join(out_dir, filename)
+            sf.write(out_path, waveform[0, 0], 16000)
+        except Exception as e:
+            print(f"⚠️ Error processing {filename}: {e}")
 
-    # Save reconstruction
-    output_path = f"output_{cfg['label']}.wav"
-    sf.write(output_path, waveform[0, 0], 16000)
-    print(f"✅ Saved: {output_path}")
-
-    # Compute and print approximate bitrate
+    # Optional: print approximate bitrate
     bitrate_kbps = (
         cfg["token_rate"] *
         (torch.log2(torch.tensor(cfg["semantic_vocab_size"])).item())
     ) / 1000
     print(f"Approximate bitrate: {bitrate_kbps:.2f} kbps")
 
-print("\nAll six reconstructions complete!")
+print("\n✅ All six bitrate reconstructions complete!")

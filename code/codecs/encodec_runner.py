@@ -1,93 +1,131 @@
-import time
-from typing import Dict, Any, Optional
+"""
+Encodec Multi-Bitrate Batch Evaluation
+--------------------------------------
+Author: Chibuzor Okocha
+Purpose: Encode & decode all audio files in a folder at multiple bitrates using Encodec
+"""
 
-import numpy as np
+import os
+import time
 import torch
-from encodec.model import EncodecModel
+import numpy as np
+import soundfile as sf
+import torchaudio
+from tqdm import tqdm
+from encodec import EncodecModel
 from encodec.utils import convert_audio
 
-def _load_wav(path: str, sr: int) -> np.ndarray:
-    import soundfile as sf
-    wav, srx = sf.read(path, always_2d=True)  # Force 2D
-    
-    # Fix channel ordering if needed
-    if wav.ndim == 2 and wav.shape[0] > wav.shape[1]:
-        wav = wav.T  # Transpose if channels are first
-    
-    # Limit to 2 channels max
-    if wav.shape[0] > 2:
-        wav = wav[:2]
-    
-    if srx != sr:
-        import librosa
-        if wav.shape[0] == 1:
-            wav = librosa.resample(wav[0].astype(float), orig_sr=srx, target_sr=sr)[None, :]
-        else:
-            wav = np.array([librosa.resample(ch.astype(float), orig_sr=srx, target_sr=sr) for ch in wav])
-    
+# ------------------------------------------------------------
+# 1. Load & Save Utilities
+# ------------------------------------------------------------
+def load_wav(path, target_sr):
+    wav, sr = sf.read(path, always_2d=False)
+    if wav.ndim > 1:
+        wav = wav.mean(axis=1)  # convert to mono
+    wav = torch.tensor(wav, dtype=torch.float32)
+    if sr != target_sr:
+        wav = torchaudio.functional.resample(wav.unsqueeze(0), sr, target_sr).squeeze(0)
     return wav
 
-def _save_wav(wav: np.ndarray, path: str, sr: int):
-    import soundfile as sf
-    x = wav
-    if x.ndim == 2 and x.shape[0] == 1:
-        x = x[0]
-    sf.write(path, x, sr)
+def save_wav(tensor, path, sr):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    tensor = tensor.squeeze().cpu().numpy()
+    sf.write(path, tensor, sr)
 
-class EncodecRunner:
-    def __init__(self, bandwidth_kbps: float = 3.0, causal: bool = True, sr: int = 24000, device: Optional[str] = None):
-        self.sr = sr
-        self.bandwidth_kbps = bandwidth_kbps
-        # Force CPU for EnCodec to avoid CUDA tensor issues
-        self.device = torch.device("cpu")
-        self.model = EncodecModel.encodec_model_24khz()
-        # EnCodec expects a supported kbps value (float)
-        self.model.set_target_bandwidth(bandwidth_kbps)
-        try:
-            self.model.set_causal(causal)
-        except Exception:
-            pass
-        self.model.to(self.device).eval()
+# ------------------------------------------------------------
+# 2. Chunked Encodec Run (to handle long files safely)
+# ------------------------------------------------------------
+def encodec_reconstruct(model, wav, chunk_sec=10.0, device='cuda'):
+    sr = model.sample_rate
+    chunk_len = int(chunk_sec * sr)
+    chunks = []
+    with torch.no_grad():
+        for start in range(0, len(wav), chunk_len):
+            end = min(start + chunk_len, len(wav))
+            x = wav[start:end].unsqueeze(0).unsqueeze(0).to(device)
+            encoded = model.encode(x)
+            decoded = model.decode(encoded)
+            chunks.append(decoded.squeeze().cpu())
+    return torch.cat(chunks)
 
-    def run(self, in_wav_path: str, out_wav_path: str) -> Dict[str, Any]:
-        wav = _load_wav(in_wav_path, self.sr)  # [1, T]
-        x = torch.from_numpy(wav).float().to(self.device)
-        if x.dim() == 2:
-            x = x.unsqueeze(0)  # [1, 1, T]
-        x = convert_audio(x, self.sr, self.model.sample_rate, self.model.channels)
-        
-        # Ensure model is on the same device as input
-        self.model = self.model.to(self.device)
-        # Force model to eval mode and ensure all parameters are on device
-        self.model.eval()
-        for param in self.model.parameters():
-            param.data = param.data.to(self.device)
+# ------------------------------------------------------------
+# 3. Batch Runner
+# ------------------------------------------------------------
+def encodec_folder(
+    input_dir: str,
+    output_root: str,
+    bitrates=(3.0, 6.0, 12.0, 24.0),
+    sr: int = 24000,
+    causal: bool = True,
+    chunk_sec: float = 10.0
+):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"\n Using device: {device}")
 
-        t0 = time.time()
-        with torch.no_grad():
-            frames = self.model.encode(x)
-            y = self.model.decode(frames)
-        dt = time.time() - t0
+    # Load model once
+    model = EncodecModel.encodec_model_24khz()
+    try:
+        model.set_causal(causal)
+    except Exception:
+        pass
+    model.to(device).eval()
 
-        y = y.detach().cpu().numpy()
-        if y.ndim == 3:
-            y = y[0]
-        if y.ndim == 2 and y.shape[0] > 1:
-            y = y.mean(axis=0, keepdims=True)
-        elif y.ndim == 1:
-            y = y[None, :]
+    # Collect audio files recursively
+    audio_files = []
+    for root, _, files in os.walk(input_dir):
+        for f in files:
+            if f.lower().endswith(".wav"):
+                audio_files.append(os.path.join(root, f))
+    print(f"🎧 Found {len(audio_files)} .wav files in {input_dir}")
 
-        _save_wav(y, out_wav_path, self.model.sample_rate)
+    # Run over multiple bitrates
+    for kbps in bitrates:
+        print(f"\n--- Running Encodec @ {kbps} kbps ---")
+        out_dir = os.path.join(output_root, f"out_{int(kbps)}kbps")
+        os.makedirs(out_dir, exist_ok=True)
 
-        num_seconds = wav.shape[-1] / float(self.sr)
-        rtf = dt / max(1e-9, num_seconds)
+        # Set bitrate
+        model.set_target_bandwidth(kbps)
 
-        return {
-            "codec": "encodec_24khz",
-            "kbps": float(self.bandwidth_kbps),
-            "sr_in": int(self.sr),
-            "sr_out": int(self.model.sample_rate),
-            "elapsed_sec": float(dt),
-            "rtf": float(rtf),
-            "device": str(self.device),
-        }
+        for audio_path in tqdm(audio_files, desc=f"{kbps} kbps"):
+            try:
+                filename = os.path.basename(audio_path)
+                wav = load_wav(audio_path, sr)
+
+                # Convert & resample for model input
+                x = convert_audio(
+                    wav.unsqueeze(0).unsqueeze(0),
+                    sr,
+                    model.sample_rate,
+                    model.channels
+                )
+
+                t0 = time.time()
+                y = encodec_reconstruct(model, x[0, 0], chunk_sec=chunk_sec, device=device)
+                elapsed = time.time() - t0
+
+                out_path = os.path.join(out_dir, filename)
+                save_wav(y, out_path, model.sample_rate)
+
+                # Optional logging
+                num_seconds = len(wav) / sr
+                print(f"{filename}: RTF={elapsed / num_seconds:.3f}")
+            except Exception as e:
+                print(f" Error with {audio_path}: {e}")
+
+    print("\n All bitrate reconstructions complete!")
+
+# ------------------------------------------------------------
+# 4. Run Example
+# ------------------------------------------------------------
+if __name__ == "__main__":
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/Encodec_outputs"
+
+    encodec_folder(
+        input_dir=input_folder,
+        output_root=output_folder,
+        bitrates=(3.0, 6.0, 12.0, 24.0),  # Adjust as needed
+        sr=24000,
+        causal=True
+    )

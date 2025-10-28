@@ -10,7 +10,7 @@ CodecEval-Africa evaluates 6 state-of-the-art neural speech codecs on balanced A
 
 **Working Codecs (6 total):**
 - **EnCodec** (`encodec_24khz`) - Meta's production neural codec
-- **SoundStream** (`soundstream_impl`) - EnCodec-based non-causal implementation
+- **LanguageCodec**
 - **UniCodec** (`unicodec`) - Simplified neural autoencoder with quantization
 - **DAC** (`dac`) - High-quality residual neural codec
 - **SemantiCodec** (`sematicodec`) - Semantic-aware codec with attention mechanisms
