@@ -44,8 +44,14 @@ def reconstruct_chunked(model, wav, chunk_sec=10.0, overlap_sec=0.25):
             z, codes, latents, _, _ = model.encode(x)
             # DAC decode expects the latent z
             y = model.decode(z).squeeze().cpu().numpy()
-        rec[start:end] += y[: end - start]
-        weight[start:end] += 1
+        
+        # Handle length mismatch between input and output
+        chunk_len = end - start
+        output_len = len(y)
+        actual_len = min(chunk_len, output_len)
+        
+        rec[start:start + actual_len] += y[:actual_len]
+        weight[start:start + actual_len] += 1
 
     rec /= np.maximum(weight, 1e-6)
     return torch.from_numpy(rec).float()

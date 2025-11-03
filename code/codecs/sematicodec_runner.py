@@ -41,6 +41,21 @@ configs = [
     {"token_rate": 100, "semantic_vocab_size": 32768,  "label": "1.40kbps"},
 ]
 
+# Optional: allow resuming from a specific bitrate via environment variables
+start_label = os.getenv("SEMANTICODEC_START_LABEL")
+start_index_env = os.getenv("SEMANTICODEC_START_INDEX")
+start_index = 0
+if start_label:
+    for idx, cfg in enumerate(configs):
+        if cfg["label"] == start_label:
+            start_index = idx
+            break
+if start_index_env is not None:
+    try:
+        start_index = max(0, min(len(configs) - 1, int(start_index_env)))
+    except ValueError:
+        pass
+
 # ==============================
 # 4. Gather Audio Files
 # ==============================
@@ -54,7 +69,7 @@ print(f"Found {len(audio_files)} audio files in {input_dir}")
 # ==============================
 # 5. Run SemantiCodec at 6 Bitrates
 # ==============================
-for cfg in configs:
+for cfg in configs[start_index:]:
     label = cfg["label"]
     out_dir = os.path.join(output_root, label)
     os.makedirs(out_dir, exist_ok=True)
@@ -67,6 +82,12 @@ for cfg in configs:
 
     for audio_path in tqdm(audio_files, desc=f"{label}"):
         filename = os.path.basename(audio_path)
+        out_path = os.path.join(out_dir, filename)
+        
+        # Skip if already processed
+        if os.path.exists(out_path):
+            continue
+        
         try:
             # Encode
             tokens = semanticodec.encode(audio_path)
@@ -74,10 +95,9 @@ for cfg in configs:
             waveform = semanticodec.decode(tokens)
 
             # Save reconstruction
-            out_path = os.path.join(out_dir, filename)
             sf.write(out_path, waveform[0, 0], 16000)
         except Exception as e:
-            print(f"⚠️ Error processing {filename}: {e}")
+            print(f" Error processing {filename}: {e}")
 
     # Optional: print approximate bitrate
     bitrate_kbps = (
@@ -86,4 +106,4 @@ for cfg in configs:
     ) / 1000
     print(f"Approximate bitrate: {bitrate_kbps:.2f} kbps")
 
-print("\n✅ All six bitrate reconstructions complete!")
+print("\n All six bitrate reconstructions complete!")

@@ -36,6 +36,8 @@ diagnosis_output/
 outputs/
 outputs/Encodec_outputs/
 outputs/DAC_outputs/
+outputs/UniCodec_outputs/
+outputs/APCodec_outputs/
 
 # SLURM job outputs
 slurm-*.out
@@ -81,6 +83,9 @@ Thumbs.db
 # Pretrained model directories
 code/codecs/pretrained/
 **/pretrained/
+UniCodec/checkpoints/
+APCodec/checkpoints/
+**/checkpoints/*.ckpt
 
 
 
