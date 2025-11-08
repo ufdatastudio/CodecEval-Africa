@@ -25,8 +25,8 @@ print(f"Using device: {device}")
 # ==============================
 # 2. Input & Output Paths
 # ==============================
-input_dir = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
-output_root = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/SemantiCodec_outputs"
+input_dir = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afri_names_150_flat"
+output_root = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/SemantiCodec_outputs"
 os.makedirs(output_root, exist_ok=True)
 
 # ==============================
@@ -41,20 +41,8 @@ configs = [
     {"token_rate": 100, "semantic_vocab_size": 32768,  "label": "1.40kbps"},
 ]
 
-# Optional: allow resuming from a specific bitrate via environment variables
-start_label = os.getenv("SEMANTICODEC_START_LABEL")
-start_index_env = os.getenv("SEMANTICODEC_START_INDEX")
+# Start from beginning (no resume logic needed for new dataset)
 start_index = 0
-if start_label:
-    for idx, cfg in enumerate(configs):
-        if cfg["label"] == start_label:
-            start_index = idx
-            break
-if start_index_env is not None:
-    try:
-        start_index = max(0, min(len(configs) - 1, int(start_index_env)))
-    except ValueError:
-        pass
 
 # ==============================
 # 4. Gather Audio Files
@@ -69,7 +57,7 @@ print(f"Found {len(audio_files)} audio files in {input_dir}")
 # ==============================
 # 5. Run SemantiCodec at 6 Bitrates
 # ==============================
-for cfg in configs[start_index:]:
+for cfg in configs:
     label = cfg["label"]
     out_dir = os.path.join(output_root, label)
     os.makedirs(out_dir, exist_ok=True)

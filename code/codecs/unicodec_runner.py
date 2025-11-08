@@ -234,8 +234,8 @@ def compress_folder(
 
 if __name__ == "__main__":
     # Configuration
-    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
-    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/UniCodec_outputs"
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afri_names_150_flat"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/UniCodec_outputs"
     
     # UniCodec model paths
     config_path = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/UniCodec/configs/unicodec_frame75_10s_nq1_code16384_dim512_finetune.yaml"

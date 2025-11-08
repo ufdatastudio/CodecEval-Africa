@@ -292,8 +292,8 @@ def compress_folder(
 if __name__ == "__main__":
     # Configuration
     base_dir = "/orange/ufdatastudios/c.okocha/CodecEval-Africa"
-    input_folder = os.path.join(base_dir, "data", "afrispeech_dialog", "data")
-    output_folder = os.path.join(base_dir, "outputs", "WavTokenizer_outputs")
+    input_folder = os.path.join(base_dir, "data", "afri_names_150_flat")
+    output_folder = os.path.join(base_dir, "outputs", "afrinames", "WavTokenizer_outputs")
     
     # You can specify which models to use (default: all)
     # Example: use only small models

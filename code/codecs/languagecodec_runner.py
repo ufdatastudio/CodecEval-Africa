@@ -196,8 +196,8 @@ def run_languagecodec_folder(input_folder, output_folder, config_path, ckpt_path
 
 if __name__ == "__main__":
     # Paths
-    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
-    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/LanguageCodec_outputs"
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afri_names_150_flat"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/LanguageCodec_outputs"
     
     # LanguageCodec paths
     config_path = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/Languagecodec/configs/languagecodec_mm.yaml"

@@ -119,8 +119,8 @@ def encodec_folder(
 # 4. Run Example
 # ------------------------------------------------------------
 if __name__ == "__main__":
-    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
-    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/Encodec_outputs"
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afri_names_150_flat"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/Encodec_outputs"
 
     encodec_folder(
         input_dir=input_folder,

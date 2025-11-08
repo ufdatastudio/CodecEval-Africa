@@ -112,6 +112,6 @@ def compress_folder(
 
 
 if __name__ == "__main__":
-    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afrispeech_dialog/data"
-    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/DAC_outputs"
+    input_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/data/afri_names_150_flat"
+    output_folder = "/orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/DAC_outputs"
     compress_folder(input_folder, output_folder)

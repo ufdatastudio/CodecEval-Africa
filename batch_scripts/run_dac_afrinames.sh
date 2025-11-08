@@ -1,16 +1,16 @@
 #!/bin/bash
-#SBATCH --job-name=apcodec_afrispeech
-#SBATCH --output=apcodec_afrispeech_%j.out
-#SBATCH --error=apcodec_afrispeech_%j.err
+#SBATCH --job-name=dac_afrinames
+#SBATCH --output=batch_scripts/dac_afrinames_%j.out
+#SBATCH --error=batch_scripts/dac_afrinames_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64gb
-#SBATCH --time=04:00:00
+#SBATCH --time=10:00:00
 #SBATCH --account=ufdatastudios
 #SBATCH --mail-user=c.okocha@ufl.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --partition=hpg-b200
+#SBATCH --partition=hpg-turin
 #SBATCH --gpus=1
 
 echo "Job started at: $(date)"
@@ -39,9 +39,10 @@ echo "CUDA: $(nvcc --version | grep release)"
 # Change to the script directory
 cd /orange/ufdatastudios/c.okocha/CodecEval-Africa/code/codecs
 
-# Run the APCodec script
-python apcodec_runner.py
+# Run the DAC script
+python dac_runner.py
 
 echo "Job completed at: $(date)"
-echo "APCodec processing complete!"
+echo "DAC processing complete!"
+echo "Output files saved to: /orange/ufdatastudios/c.okocha/CodecEval-Africa/outputs/afrinames/DAC_outputs/"
 

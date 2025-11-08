@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64gb
-#SBATCH --time=04:00:00
+#SBATCH --time=06:00:00
 #SBATCH --account=ufdatastudios
 #SBATCH --mail-user=c.okocha@ufl.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
