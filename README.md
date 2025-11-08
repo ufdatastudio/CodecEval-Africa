@@ -32,11 +32,11 @@
 
 ## 🎯 Overview
 
-**CodecEval-Africa** is a comprehensive benchmarking framework for evaluating state-of-the-art neural speech codecs on African-accented English and conversational audio. This project provides:
+**CodecEval-Africa** is a comprehensive benchmarking framework for evaluating state-of-the-art neural speech codecs on African-accented English, conversational audio, and multilingual African speech. This project provides:
 
 - **6 Neural Codecs** - Evaluation of leading speech compression models
 - **6 Quality Metrics** - Comprehensive perceptual and objective quality assessment
-- **African Speech Datasets** - Focused evaluation on African-accented English
+- **African Speech Datasets** - Focused evaluation on African-accented English and multilingual African languages
 - **Multi-Bitrate Analysis** - Performance evaluation across various compression rates
 - **GPU Acceleration** - Optimized for high-performance computing environments
 
@@ -46,7 +46,7 @@
 
 - 🎚️ **Multi-Codec Support** - EnCodec, DAC, LanguageCodec, UniCodec, SemantiCodec, WavTokenizer
 - 📊 **Comprehensive Metrics** - NISQA, ViSQOL, DNSMOS, Speaker Similarity, Prosody, ASR WER
-- 🌍 **African Speech Focus** - Specialized evaluation on African-accented English datasets
+- 🌍 **African Speech Focus** - Specialized evaluation on African-accented English and multilingual African language datasets
 - ⚡ **GPU Accelerated** - Optimized batch processing for SLURM clusters
 - 📈 **Bitrate Analysis** - Performance evaluation from ultra-low to high bitrates
 - 🔧 **Modular Design** - Easy to extend with new codecs and metrics
@@ -150,6 +150,14 @@
 - **Content**: Medical consultations and dialogues
 - **Use Case**: Real-world conversational audio evaluation
 
+### AfriSpeech-Multilingual
+- **Type**: Multilingual African speech dataset
+- **Languages**: Igbo and other African languages (Common Voice)
+- **Content**: 100+ audio samples from Common Voice dataset
+- **Format**: WAV files (24 kHz, mono) - converted from original MP3
+- **Use Case**: Multilingual codec evaluation across African languages
+- **Conversion**: Audio files are converted to WAV format using the provided conversion script
+
 ---
 
 ## 🚀 Quick Start
@@ -227,6 +235,23 @@ python scripts/analyze_all_metrics.py
 python scripts/plot_reports.py
 ```
 
+### Dataset Preparation
+
+**Convert Audio Files to WAV Format:**
+```bash
+# Convert afrispeech_multilingual dataset from MP3 to WAV
+python scripts/convert_afrispeech_multilingual_to_wav.py
+
+# Or submit as batch job
+sbatch scripts/convert_afrispeech_multilingual_batch.sh
+```
+
+The conversion script:
+- Converts MP3, FLAC, M4A, and other formats to WAV
+- Resamples to 24 kHz (standard for codec evaluation)
+- Converts to mono audio
+- Preserves directory structure
+
 ### GPU Acceleration
 
 - **GPU-Accelerated Codecs**: EnCodec, DAC, UniCodec, WavTokenizer
@@ -286,8 +311,15 @@ CodecEval-Africa/
 ├── code/                   # Core codec evaluation code
 │   └── codecs/            # Codec runners
 ├── configs/               # Configuration files
-├── data/                  # Dataset manifests
+├── data/                  # Dataset directory
+│   ├── afri_names_150_flat/       # Afri-Names dataset
+│   ├── afrispeech_dialog/         # AfriSpeech-Dialog dataset
+│   ├── afrispeech_multilingual/   # Multilingual dataset (original MP3)
+│   ├── afrispeech_multilingual_wav/ # Multilingual dataset (converted WAV)
+│   └── manifests/         # Dataset manifest files
 ├── scripts/               # Evaluation and analysis scripts
+│   ├── convert_afrispeech_multilingual_to_wav.py  # Audio conversion script
+│   └── ...               # Other evaluation scripts
 ├── results/               # Output results
 │   ├── decoded/          # Decoded audio files
 │   ├── csv/              # Metrics CSV files
