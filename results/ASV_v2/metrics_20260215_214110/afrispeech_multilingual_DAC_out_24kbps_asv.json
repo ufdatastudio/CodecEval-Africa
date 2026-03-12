@@ -1,0 +1,431 @@
+{
+  "metric": "asv",
+  "metrics": {
+    "eer": 0.0,
+    "eer_percent": 0.0,
+    "eer_threshold": 0.9999621305602442,
+    "eer_ci95": [
+      0.0,
+      0.0
+    ],
+    "eer_percent_ci95": [
+      0.0,
+      0.0
+    ],
+    "min_dcf": 0.0,
+    "min_dcf_threshold": 0.9999621305602442,
+    "min_dcf_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "model_type": "mfcc",
+  "model_type_requested": "mfcc",
+  "reference_dir": "/orange/ufdatastudios/c.okocha/Dataset/afrispeech_multilingual_wav",
+  "degraded_dir": "outputs/afrispeech_multilingual/DAC_outputs/out_24kbps",
+  "timestamp": "2026-02-16T01:35:01.298673",
+  "num_reference_files": 100,
+  "num_degraded_files": 8,
+  "num_matched_files": 8,
+  "num_usable_files": 8,
+  "impostors_per_file": 10,
+  "impostor_mode": "all",
+  "bootstrap_samples": 200,
+  "num_trials": 64,
+  "num_target_trials": 8,
+  "num_impostor_trials": 56,
+  "diagnostics": {
+    "target_min": 0.9999621305602442,
+    "target_max": 0.9999941765294171,
+    "impostor_min": 0.9963911774296766,
+    "impostor_max": 0.9997069817054398,
+    "separation_margin_targetMin_minus_impostorMax": 0.00025514885480437677,
+    "has_overlap": false
+  },
+  "score_stats": {
+    "mean": 0.9987264891440979,
+    "std": 0.000916918442890792,
+    "min": 0.9963911774296766,
+    "max": 0.9999941765294171,
+    "target_mean": 0.999981630509622,
+    "impostor_mean": 0.9985471832347373
+  },
+  "trials": [
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "label": "target",
+      "score": 0.9999864447534199
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9990289533410819
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9967837544373894
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9978701261558588
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9992147387545177
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9992362914717168
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9985034173284675
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.999172348377394
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "label": "target",
+      "score": 0.9999839032011502
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9991646607308351
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9971049452871881
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9977059796665191
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9994594928364917
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9994787516393422
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9986140659542406
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9993854701191478
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "label": "target",
+      "score": 0.9999786059275497
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9971838227204015
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9974048497143617
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9985754091220262
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9982327723138114
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9978728972786317
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9987493261220921
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9968279913993412
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "label": "target",
+      "score": 0.9999621305602442
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9984141288271299
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9979827478743715
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9985519764983397
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.998631773219526
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9984999268044269
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9984467001005402
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9971378941658142
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "label": "target",
+      "score": 0.9999894873849009
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9992824582299964
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9994481369314925
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9978607916156841
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9983228510528925
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9996497662022019
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9991067582512004
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9993726891783132
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "label": "target",
+      "score": 0.9999773399182619
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9993545306931708
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9995918901266491
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9975864307292678
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9982547377031596
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9997069817054398
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9986061845342242
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9994488838053963
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "label": "target",
+      "score": 0.9999809558020315
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9987253725447692
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9987088688084808
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9985253225315835
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9983530258175615
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9992937444135999
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9987584991597517
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "impostor_ref": "common_voice_ig_30690543.wav",
+      "label": "impostor",
+      "score": 0.9987244458504116
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "label": "target",
+      "score": 0.9999941765294171
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30689630.wav",
+      "label": "impostor",
+      "score": 0.9991279235669288
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30689668.wav",
+      "label": "impostor",
+      "score": 0.9992635739732224
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30690011.wav",
+      "label": "impostor",
+      "score": 0.9963911774296766
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30690256.wav",
+      "label": "impostor",
+      "score": 0.9967619768701363
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30690345.wav",
+      "label": "impostor",
+      "score": 0.9993162777046951
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30690399.wav",
+      "label": "impostor",
+      "score": 0.9993542400474962
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "impostor_ref": "common_voice_ig_30690505.wav",
+      "label": "impostor",
+      "score": 0.9985095094068855
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+====================================================================================================
+STOI EVALUATION RESULTS - COMPREHENSIVE SUMMARY
+====================================================================================================
+Generated: 2026-02-13 11:59:32
+
+STOI (Short-Time Objective Intelligibility) Score Range: 0.0 - 1.0
+Higher scores indicate better intelligibility
+====================================================================================================
+
+
+Dataset: AFRINAMES
+----------------------------------------------------------------------------------------------------
+Codec                Bitrate      STOI       Std Dev    Files    Quality
+----------------------------------------------------------------------------------------------------
+DAC                  8kbps        0.9616     0.0168     46       Excellent
+DAC                  16kbps       0.9934     0.0028     46       Excellent
+DAC                  24kbps       0.9588     0.0186     46       Excellent
+Encodec              3kbps        0.8816     0.0373     67       Good
+Encodec              6kbps        0.9265     0.0267     67       Very Good
+Encodec              12kbps       0.9543     0.0185     67       Excellent
+Encodec              24kbps       0.9658     0.0143     67       Excellent
+UniCodec             6.6kbps      0.8629     0.0572     67       Good
+
+
+Dataset: AFRISPEECH_DIALOG
+----------------------------------------------------------------------------------------------------
+Codec                Bitrate      STOI       Std Dev    Files    Quality
+----------------------------------------------------------------------------------------------------
+DAC                  8kbps        0.9454     0.0209     49       Very Good
+DAC                  16kbps       0.9905     0.0032     49       Excellent
+DAC                  24kbps       0.9431     0.0205     49       Very Good
+Encodec              3kbps        0.8343     0.0505     49       Fair
+Encodec              6kbps        0.8870     0.0398     49       Good
+Encodec              12kbps       0.9250     0.0302     49       Very Good
+Encodec              24kbps       0.9454     0.0236     49       Very Good
+UniCodec             6.6kbps      0.7101     0.0794     49       Poor
+
+
+====================================================================================================
+Quality Scale:
+  Excellent:  STOI ≥ 0.95
+  Very Good:  0.90 ≤ STOI < 0.95
+  Good:       0.85 ≤ STOI < 0.90
+  Fair:       0.75 ≤ STOI < 0.85
+  Poor:       STOI < 0.75
+====================================================================================================

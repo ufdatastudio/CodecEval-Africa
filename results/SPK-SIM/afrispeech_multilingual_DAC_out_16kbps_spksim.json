@@ -1,0 +1,66 @@
+{
+  "metric": "spk_sim",
+  "model_type": "mfcc",
+  "reference_dir": "/orange/ufdatastudios/c.okocha/Dataset/afrispeech_multilingual_wav",
+  "degraded_dir": "outputs/afrispeech_multilingual/DAC_outputs/out_16kbps",
+  "timestamp": "2026-02-13T22:31:39.661449",
+  "num_reference_files": 100,
+  "num_degraded_files": 8,
+  "num_matched_files": 8,
+  "num_scored_files": 8,
+  "spk_sim": 0.9999905146828123,
+  "spk_sim_std": 6.899804481664526e-06,
+  "spk_sim_median": 0.9999924472147962,
+  "spk_sim_min": 0.9999800672460499,
+  "spk_sim_max": 0.9999983358062285,
+  "per_file": [
+    {
+      "filename": "common_voice_ig_30689630.wav",
+      "cosine_similarity": 0.999987264051565,
+      "euclidean_distance": 0.4488331973552704,
+      "correlation": 0.999987643276673
+    },
+    {
+      "filename": "common_voice_ig_30689668.wav",
+      "cosine_similarity": 0.9999901854567927,
+      "euclidean_distance": 0.39413073658943176,
+      "correlation": 0.9999906902844482
+    },
+    {
+      "filename": "common_voice_ig_30690011.wav",
+      "cosine_similarity": 0.9999818039149966,
+      "euclidean_distance": 0.5283318758010864,
+      "correlation": 0.9999822078540651
+    },
+    {
+      "filename": "common_voice_ig_30690256.wav",
+      "cosine_similarity": 0.9999800672460499,
+      "euclidean_distance": 0.5408995747566223,
+      "correlation": 0.9999832669957205
+    },
+    {
+      "filename": "common_voice_ig_30690345.wav",
+      "cosine_similarity": 0.9999950697582218,
+      "euclidean_distance": 0.2938702702522278,
+      "correlation": 0.9999956033571571
+    },
+    {
+      "filename": "common_voice_ig_30690399.wav",
+      "cosine_similarity": 0.9999947089727996,
+      "euclidean_distance": 0.2946721911430359,
+      "correlation": 0.9999942288464436
+    },
+    {
+      "filename": "common_voice_ig_30690505.wav",
+      "cosine_similarity": 0.9999966822558438,
+      "euclidean_distance": 0.22174639999866486,
+      "correlation": 0.9999955939410403
+    },
+    {
+      "filename": "common_voice_ig_30690543.wav",
+      "cosine_similarity": 0.9999983358062285,
+      "euclidean_distance": 0.16876408457756042,
+      "correlation": 0.9999985695960136
+    }
+  ]
+}

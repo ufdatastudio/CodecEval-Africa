@@ -1,0 +1,1339 @@
+{
+  "metric": "acc_map",
+  "metrics": {
+    "acc": 0.04,
+    "acc_percent": 4.0,
+    "acc_ci95": [
+      0.0,
+      0.09
+    ],
+    "acc_percent_ci95": [
+      0.0,
+      9.0
+    ],
+    "map": 0.11966084510960923,
+    "map_percent": 11.966084510960922,
+    "map_ci95": [
+      0.08109484284857443,
+      0.1682889065482595
+    ],
+    "map_percent_ci95": [
+      8.109484284857443,
+      16.82889065482595
+    ],
+    "mrr": 0.11966084510960923
+  },
+  "model_type": "mfcc",
+  "model_type_requested": "mfcc",
+  "reference_dir": "/orange/ufdatastudios/c.okocha/Dataset/afrispeech_multilingual_wav",
+  "degraded_dir": "outputs/afrispeech_multilingual/FocalCodec_outputs/focalcodec_12_5hz",
+  "timestamp": "2026-02-16T22:35:12.443119",
+  "num_reference_files": 100,
+  "num_degraded_files": 100,
+  "num_matched_files": 100,
+  "num_usable_files": 100,
+  "bootstrap_samples": 200,
+  "num_queries": 100,
+  "per_file": [
+    {
+      "file": "common_voice_ig_30477016.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30690570.wav",
+        "common_voice_ig_30689998.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30477017.wav",
+      "rank_of_correct": 13,
+      "reciprocal_rank": 0.07692307692307693,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439596.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30477018.wav",
+      "rank_of_correct": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30477018.wav",
+        "common_voice_ig_30689626.wav",
+        "common_voice_ig_30477019.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30477019.wav",
+      "rank_of_correct": 11,
+      "reciprocal_rank": 0.09090909090909091,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439375.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30477020.wav",
+      "rank_of_correct": 14,
+      "reciprocal_rank": 0.07142857142857142,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439596.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689626.wav",
+      "rank_of_correct": 19,
+      "reciprocal_rank": 0.05263157894736842,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689627.wav",
+      "rank_of_correct": 44,
+      "reciprocal_rank": 0.022727272727272728,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689626.wav",
+        "common_voice_ig_30690570.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30477016.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689628.wav",
+      "rank_of_correct": 33,
+      "reciprocal_rank": 0.030303030303030304,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439378.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689629.wav",
+      "rank_of_correct": 38,
+      "reciprocal_rank": 0.02631578947368421,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_30690570.wav",
+        "common_voice_ig_30689626.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "rank_of_correct": 54,
+      "reciprocal_rank": 0.018518518518518517,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30477017.wav",
+        "common_voice_ig_30477018.wav",
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30477020.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689631.wav",
+      "rank_of_correct": 42,
+      "reciprocal_rank": 0.023809523809523808,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689652.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689632.wav",
+      "rank_of_correct": 66,
+      "reciprocal_rank": 0.015151515151515152,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439596.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439516.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689633.wav",
+      "rank_of_correct": 64,
+      "reciprocal_rank": 0.015625,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439516.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689634.wav",
+      "rank_of_correct": 26,
+      "reciprocal_rank": 0.038461538461538464,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30477017.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689635.wav",
+      "rank_of_correct": 17,
+      "reciprocal_rank": 0.058823529411764705,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_43472507.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689652.wav",
+      "rank_of_correct": 19,
+      "reciprocal_rank": 0.05263157894736842,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689655.wav",
+      "rank_of_correct": 23,
+      "reciprocal_rank": 0.043478260869565216,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30477018.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689656.wav",
+      "rank_of_correct": 17,
+      "reciprocal_rank": 0.058823529411764705,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30477018.wav",
+        "common_voice_ig_30477017.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689657.wav",
+      "rank_of_correct": 15,
+      "reciprocal_rank": 0.06666666666666667,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439596.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_30690544.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689658.wav",
+      "rank_of_correct": 18,
+      "reciprocal_rank": 0.05555555555555555,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690567.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689665.wav",
+      "rank_of_correct": 37,
+      "reciprocal_rank": 0.02702702702702703,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_43472507.wav",
+        "common_voice_ig_30689657.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689666.wav",
+      "rank_of_correct": 32,
+      "reciprocal_rank": 0.03125,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30477016.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689667.wav",
+      "rank_of_correct": 31,
+      "reciprocal_rank": 0.03225806451612903,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690342.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "rank_of_correct": 24,
+      "reciprocal_rank": 0.041666666666666664,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_43472507.wav",
+        "common_voice_ig_30690541.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689669.wav",
+      "rank_of_correct": 36,
+      "reciprocal_rank": 0.027777777777777776,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30689657.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689997.wav",
+      "rank_of_correct": 30,
+      "reciprocal_rank": 0.03333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_30690567.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689998.wav",
+      "rank_of_correct": 12,
+      "reciprocal_rank": 0.08333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_30690542.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689999.wav",
+      "rank_of_correct": 64,
+      "reciprocal_rank": 0.015625,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30690541.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690000.wav",
+      "rank_of_correct": 19,
+      "reciprocal_rank": 0.05263157894736842,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690001.wav",
+      "rank_of_correct": 19,
+      "reciprocal_rank": 0.05263157894736842,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30689998.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690008.wav",
+      "rank_of_correct": 7,
+      "reciprocal_rank": 0.14285714285714285,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689997.wav",
+        "common_voice_ig_30690397.wav",
+        "common_voice_ig_30690001.wav",
+        "common_voice_ig_30689669.wav",
+        "common_voice_ig_43472503.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690009.wav",
+      "rank_of_correct": 12,
+      "reciprocal_rank": 0.08333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690010.wav",
+      "rank_of_correct": 75,
+      "reciprocal_rank": 0.013333333333333334,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690543.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "rank_of_correct": 79,
+      "reciprocal_rank": 0.012658227848101266,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30689666.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690012.wav",
+      "rank_of_correct": 22,
+      "reciprocal_rank": 0.045454545454545456,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30689666.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690129.wav",
+      "rank_of_correct": 63,
+      "reciprocal_rank": 0.015873015873015872,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689666.wav",
+        "common_voice_ig_30690539.wav",
+        "common_voice_ig_30689629.wav",
+        "common_voice_ig_30689658.wav",
+        "common_voice_ig_30690345.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690130.wav",
+      "rank_of_correct": 15,
+      "reciprocal_rank": 0.06666666666666667,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690342.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690131.wav",
+      "rank_of_correct": 71,
+      "reciprocal_rank": 0.014084507042253521,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30689666.wav",
+        "common_voice_ig_30690505.wav",
+        "common_voice_ig_30690568.wav",
+        "common_voice_ig_30690566.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690132.wav",
+      "rank_of_correct": 83,
+      "reciprocal_rank": 0.012048192771084338,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30689652.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690133.wav",
+      "rank_of_correct": 81,
+      "reciprocal_rank": 0.012345679012345678,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690252.wav",
+      "rank_of_correct": 91,
+      "reciprocal_rank": 0.01098901098901099,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477020.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30477019.wav",
+        "common_voice_ig_30477018.wav",
+        "common_voice_ig_30689652.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690253.wav",
+      "rank_of_correct": 58,
+      "reciprocal_rank": 0.017241379310344827,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690546.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690254.wav",
+      "rank_of_correct": 79,
+      "reciprocal_rank": 0.012658227848101266,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690346.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690255.wav",
+      "rank_of_correct": 31,
+      "reciprocal_rank": 0.03225806451612903,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690342.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "rank_of_correct": 87,
+      "reciprocal_rank": 0.011494252873563218,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690342.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690342.wav",
+      "rank_of_correct": 23,
+      "reciprocal_rank": 0.043478260869565216,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690542.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690343.wav",
+      "rank_of_correct": 78,
+      "reciprocal_rank": 0.01282051282051282,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690344.wav",
+      "rank_of_correct": 61,
+      "reciprocal_rank": 0.01639344262295082,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "rank_of_correct": 18,
+      "reciprocal_rank": 0.05555555555555555,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690504.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690346.wav",
+      "rank_of_correct": 5,
+      "reciprocal_rank": 0.2,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30689666.wav",
+        "common_voice_ig_30690346.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690397.wav",
+      "rank_of_correct": 34,
+      "reciprocal_rank": 0.029411764705882353,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30689626.wav",
+        "common_voice_ig_30690570.wav",
+        "common_voice_ig_30690567.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690398.wav",
+      "rank_of_correct": 42,
+      "reciprocal_rank": 0.023809523809523808,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30477018.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "rank_of_correct": 27,
+      "reciprocal_rank": 0.037037037037037035,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690400.wav",
+      "rank_of_correct": 41,
+      "reciprocal_rank": 0.024390243902439025,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690401.wav",
+      "rank_of_correct": 43,
+      "reciprocal_rank": 0.023255813953488372,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_43439516.wav",
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_43439374.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690501.wav",
+      "rank_of_correct": 71,
+      "reciprocal_rank": 0.014084507042253521,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690545.wav",
+        "common_voice_ig_30689666.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690539.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690502.wav",
+      "rank_of_correct": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_30690567.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690503.wav",
+      "rank_of_correct": 21,
+      "reciprocal_rank": 0.047619047619047616,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690504.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690504.wav",
+      "rank_of_correct": 29,
+      "reciprocal_rank": 0.034482758620689655,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439596.wav",
+        "common_voice_ig_43439595.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "rank_of_correct": 26,
+      "reciprocal_rank": 0.038461538461538464,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690570.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30689626.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690536.wav",
+      "rank_of_correct": 19,
+      "reciprocal_rank": 0.05263157894736842,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689626.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439596.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690537.wav",
+      "rank_of_correct": 22,
+      "reciprocal_rank": 0.045454545454545456,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690504.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690538.wav",
+      "rank_of_correct": 72,
+      "reciprocal_rank": 0.013888888888888888,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690539.wav",
+      "rank_of_correct": 41,
+      "reciprocal_rank": 0.024390243902439025,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690544.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690540.wav",
+      "rank_of_correct": 55,
+      "reciprocal_rank": 0.01818181818181818,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690543.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690541.wav",
+      "rank_of_correct": 14,
+      "reciprocal_rank": 0.07142857142857142,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439516.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690542.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "rank_of_correct": 2,
+      "reciprocal_rank": 0.5,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_43472503.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690544.wav",
+      "rank_of_correct": 2,
+      "reciprocal_rank": 0.5,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43439595.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690545.wav",
+      "rank_of_correct": 34,
+      "reciprocal_rank": 0.029411764705882353,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_30690570.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690546.wav",
+      "rank_of_correct": 8,
+      "reciprocal_rank": 0.125,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30689626.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690547.wav",
+      "rank_of_correct": 10,
+      "reciprocal_rank": 0.1,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690568.wav",
+        "common_voice_ig_30690503.wav",
+        "common_voice_ig_30690505.wav",
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30690546.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690548.wav",
+      "rank_of_correct": 46,
+      "reciprocal_rank": 0.021739130434782608,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30689666.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30689629.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690549.wav",
+      "rank_of_correct": 4,
+      "reciprocal_rank": 0.25,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690255.wav",
+        "common_voice_ig_30690342.wav",
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30690549.wav",
+        "common_voice_ig_30690546.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690566.wav",
+      "rank_of_correct": 15,
+      "reciprocal_rank": 0.06666666666666667,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690009.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690346.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30689666.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690567.wav",
+      "rank_of_correct": 9,
+      "reciprocal_rank": 0.1111111111111111,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_30477016.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690568.wav",
+      "rank_of_correct": 38,
+      "reciprocal_rank": 0.02631578947368421,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690345.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690569.wav",
+      "rank_of_correct": 52,
+      "reciprocal_rank": 0.019230769230769232,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690504.wav",
+        "common_voice_ig_30690546.wav",
+        "common_voice_ig_30689652.wav",
+        "common_voice_ig_30690567.wav",
+        "common_voice_ig_30690543.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690570.wav",
+      "rank_of_correct": 12,
+      "reciprocal_rank": 0.08333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_43439594.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439374.wav",
+      "rank_of_correct": 8,
+      "reciprocal_rank": 0.125,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439375.wav",
+      "rank_of_correct": 6,
+      "reciprocal_rank": 0.16666666666666666,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43488897.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439376.wav",
+      "rank_of_correct": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439375.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439377.wav",
+      "rank_of_correct": 12,
+      "reciprocal_rank": 0.08333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439378.wav",
+      "rank_of_correct": 8,
+      "reciprocal_rank": 0.125,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439375.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439508.wav",
+      "rank_of_correct": 10,
+      "reciprocal_rank": 0.1,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439596.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439514.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43488897.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439515.wav",
+      "rank_of_correct": 5,
+      "reciprocal_rank": 0.2,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439516.wav",
+      "rank_of_correct": 11,
+      "reciprocal_rank": 0.09090909090909091,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439595.wav",
+        "common_voice_ig_43439378.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439517.wav",
+      "rank_of_correct": 18,
+      "reciprocal_rank": 0.05555555555555555,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439596.wav",
+        "common_voice_ig_43439595.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439592.wav",
+      "rank_of_correct": 11,
+      "reciprocal_rank": 0.09090909090909091,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439378.wav",
+        "common_voice_ig_43439515.wav",
+        "common_voice_ig_43439595.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439593.wav",
+      "rank_of_correct": 2,
+      "reciprocal_rank": 0.5,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43488897.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439594.wav",
+      "rank_of_correct": 4,
+      "reciprocal_rank": 0.25,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43488897.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439595.wav",
+      "rank_of_correct": 6,
+      "reciprocal_rank": 0.16666666666666666,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43439596.wav",
+      "rank_of_correct": 10,
+      "reciprocal_rank": 0.1,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439594.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439375.wav",
+        "common_voice_ig_43439515.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43472503.wav",
+      "rank_of_correct": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43472504.wav",
+      "rank_of_correct": 44,
+      "reciprocal_rank": 0.022727272727272728,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689657.wav",
+        "common_voice_ig_30690502.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43472505.wav",
+      "rank_of_correct": 21,
+      "reciprocal_rank": 0.047619047619047616,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690542.wav",
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30689998.wav",
+        "common_voice_ig_30690544.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43472506.wav",
+      "rank_of_correct": 15,
+      "reciprocal_rank": 0.06666666666666667,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_43472503.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_30690502.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_43472505.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43472507.wav",
+      "rank_of_correct": 16,
+      "reciprocal_rank": 0.0625,
+      "top1_correct": false,
+      "top5_candidates": [
+        "common_voice_ig_30477016.wav",
+        "common_voice_ig_30690544.wav",
+        "common_voice_ig_43439374.wav",
+        "common_voice_ig_43439516.wav",
+        "common_voice_ig_43439595.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_43488897.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_43488897.wav",
+        "common_voice_ig_43439514.wav",
+        "common_voice_ig_43439593.wav",
+        "common_voice_ig_43439376.wav",
+        "common_voice_ig_43439594.wav"
+      ]
+    }
+  ]
+}

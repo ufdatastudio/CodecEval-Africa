@@ -1,0 +1,4387 @@
+{
+  "metric": "asv",
+  "metrics": {
+    "eer": 0.013432835820895522,
+    "eer_percent": 1.3432835820895521,
+    "eer_threshold": 0.9999349524461401,
+    "min_dcf": 0.16417910447761194,
+    "min_dcf_threshold": 0.9999682063689379
+  },
+  "model_type": "mfcc",
+  "reference_dir": "data/afri_names_150_flat",
+  "degraded_dir": "outputs/afrinames/LanguageCodec_outputs/bandwidth_0",
+  "timestamp": "2026-02-15T09:28:00.568828",
+  "num_reference_files": 150,
+  "num_degraded_files": 150,
+  "num_matched_files": 150,
+  "num_usable_files": 67,
+  "impostors_per_file": 10,
+  "num_trials": 737,
+  "num_target_trials": 67,
+  "num_impostor_trials": 670,
+  "score_stats": {
+    "mean": 0.9986188067067203,
+    "std": 0.0011658873688721247,
+    "min": 0.9935872932040601,
+    "max": 0.9999953675916242,
+    "target_mean": 0.9999819598681983,
+    "impostor_mean": 0.9984824913905723
+  },
+  "trials": [
+    {
+      "file": "hausa08.wav",
+      "label": "target",
+      "score": 0.9999721528205873
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9965744490402426
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9971371028619185
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9967926791879332
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9970886140310751
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9979615644453182
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9958665931873862
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9980942708980233
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9971086996044429
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9975979304215608
+    },
+    {
+      "file": "hausa08.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9970678374964217
+    },
+    {
+      "file": "hausa13.wav",
+      "label": "target",
+      "score": 0.9999618915290611
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.998181459592616
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9979832930099338
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9984359103781757
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.996471452282407
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9965324481734403
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9975801275014977
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9972752174532682
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9981154247477475
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9982987097131016
+    },
+    {
+      "file": "hausa13.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9978116311712284
+    },
+    {
+      "file": "igbo01.wav",
+      "label": "target",
+      "score": 0.9999632634670723
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9947828667758465
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9944729326054966
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9985757367135908
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9979504918896389
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9986504004971979
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9970151818501429
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9982105362290741
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9972622965882595
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9978599054546881
+    },
+    {
+      "file": "igbo01.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.997246330086605
+    },
+    {
+      "file": "ijaw01.wav",
+      "label": "target",
+      "score": 0.9999753752382807
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9982704969517746
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.999429038915288
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9964435838322889
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9992390100806647
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9980991890393325
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9982210916759257
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9991113984069632
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9979238215115735
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9994501855940436
+    },
+    {
+      "file": "ijaw01.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9993356954168287
+    },
+    {
+      "file": "ijaw02.wav",
+      "label": "target",
+      "score": 0.9999883840916168
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9991761559190033
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9995671886134336
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9991556175611453
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9985522222773612
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9991928464593387
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.998610329288675
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9992872034459752
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9997075708922293
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9994586598307187
+    },
+    {
+      "file": "ijaw02.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9990975198584939
+    },
+    {
+      "file": "ijaw04.wav",
+      "label": "target",
+      "score": 0.9999953675916242
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9983351757750782
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.99938632637032
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9965019700339397
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "ijaw12.wav",
+      "label": "impostor",
+      "score": 0.9995792624346336
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9990843507735999
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9996075384172891
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9991187311316423
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9989967906941319
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9984415440894625
+    },
+    {
+      "file": "ijaw04.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9991435453892643
+    },
+    {
+      "file": "ijaw05.wav",
+      "label": "target",
+      "score": 0.9999863536193063
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.9984883989786525
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9982892214435864
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9996374188356024
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9966623507637768
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9990226601769656
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9990103123708449
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9994735370028391
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9987119089130132
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9993336455490058
+    },
+    {
+      "file": "ijaw05.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.998541030282053
+    },
+    {
+      "file": "ijaw06.wav",
+      "label": "target",
+      "score": 0.9999878597443548
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9985646239295185
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9993850284208436
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9985764457842499
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9975438952632834
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9989434666113259
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9990713994209188
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9995618924710642
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9991773536670125
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9990179124227878
+    },
+    {
+      "file": "ijaw06.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9961776279625282
+    },
+    {
+      "file": "ijaw07.wav",
+      "label": "target",
+      "score": 0.9999670871423169
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9981541981910492
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9995265138705125
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9978800455489228
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.999450496819517
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9970590679445462
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9991125956826086
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.9994034516864894
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9986461665856599
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9949116727394303
+    },
+    {
+      "file": "ijaw07.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9994557500321681
+    },
+    {
+      "file": "ijaw08.wav",
+      "label": "target",
+      "score": 0.9999803201366928
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9995465045467036
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9983934621437589
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.99889253281145
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "zulu12.wav",
+      "label": "impostor",
+      "score": 0.9995067545343205
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9996950960006549
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9978701919953417
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9992021455107555
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9990188269755053
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9993713803422482
+    },
+    {
+      "file": "ijaw08.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9990927201565375
+    },
+    {
+      "file": "ijaw09.wav",
+      "label": "target",
+      "score": 0.9999875907955496
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9974956749682644
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9989588102578355
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.999544152308032
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9998860486401144
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9992941327512572
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9991992837639361
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9991145546140543
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9989264464469473
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9982644340399116
+    },
+    {
+      "file": "ijaw09.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.998536930218422
+    },
+    {
+      "file": "ijaw10.wav",
+      "label": "target",
+      "score": 0.999976285371637
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.999619448679556
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9993574103137675
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.998304415650185
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9967307006971906
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9995812321054792
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9997391017274107
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9994309475105407
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9998685198904967
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9994131942930878
+    },
+    {
+      "file": "ijaw10.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9995578360146264
+    },
+    {
+      "file": "ijaw11.wav",
+      "label": "target",
+      "score": 0.9999855654375116
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9978038132344207
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.999527537663153
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9986604394236721
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9988755992805027
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9985755548750653
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9993809627542168
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9957060632054214
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9999212317550847
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9995636538147157
+    },
+    {
+      "file": "ijaw11.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9996310691628474
+    },
+    {
+      "file": "ijaw12.wav",
+      "label": "target",
+      "score": 0.9999778370119962
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "shona12.wav",
+      "label": "impostor",
+      "score": 0.9996598744042253
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9982410289615233
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9970790627891428
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9998905986577797
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "shona08.wav",
+      "label": "impostor",
+      "score": 0.9993184489077548
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9992769618180611
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9998372857786268
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9993755591292068
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9997861305411191
+    },
+    {
+      "file": "ijaw12.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9967136983157303
+    },
+    {
+      "file": "shona01.wav",
+      "label": "target",
+      "score": 0.9999918068569262
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9988702808754684
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9991965735992346
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.997209503961014
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9993006447584255
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.999600548817754
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "shona08.wav",
+      "label": "impostor",
+      "score": 0.9999144680104859
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9989089524983554
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9993582761136907
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9991276943107738
+    },
+    {
+      "file": "shona01.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9996746539815589
+    },
+    {
+      "file": "shona02.wav",
+      "label": "target",
+      "score": 0.999988559916492
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9993259058418865
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9990932656781168
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9989595200812633
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9999349524461401
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9997394623346376
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9984977497629928
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9993717727570983
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9987359512955822
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9996250984169784
+    },
+    {
+      "file": "shona02.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9982501757697348
+    },
+    {
+      "file": "shona03.wav",
+      "label": "target",
+      "score": 0.9999905451291256
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9998223446800323
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9999449249371395
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9993590662555386
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9991180803326001
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9994328733575275
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9985289205296823
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9980154532537009
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9987746685273193
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9986603757411365
+    },
+    {
+      "file": "shona03.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9999671931761492
+    },
+    {
+      "file": "shona04.wav",
+      "label": "target",
+      "score": 0.9999929738869228
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "ijaw12.wav",
+      "label": "impostor",
+      "score": 0.9996730044112996
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9980060687967767
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "shona08.wav",
+      "label": "impostor",
+      "score": 0.9998074840068192
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9998678849872331
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9994679334437974
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9982594918511163
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9997143375011932
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.999514589479677
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9979138957767543
+    },
+    {
+      "file": "shona04.wav",
+      "impostor_ref": "shona13.wav",
+      "label": "impostor",
+      "score": 0.9997760058859746
+    },
+    {
+      "file": "shona05.wav",
+      "label": "target",
+      "score": 0.9999920505232714
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.9992549913732849
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9994575847184137
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9982533939736303
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9990285206413541
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9976554475608675
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9992156378434192
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9994119235141217
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9986473026060778
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.9998893899562338
+    },
+    {
+      "file": "shona05.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9984641067461244
+    },
+    {
+      "file": "shona06.wav",
+      "label": "target",
+      "score": 0.9999891626073587
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9993113276740733
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9994077502464472
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "ijaw11.wav",
+      "label": "impostor",
+      "score": 0.9991191556313932
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9975822081796201
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9988004206007908
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9982572973807202
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9996697842871787
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9975105533115478
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.999057333550756
+    },
+    {
+      "file": "shona06.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9997788830544683
+    },
+    {
+      "file": "shona07.wav",
+      "label": "target",
+      "score": 0.999991457368724
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9983091376090928
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9989437564062167
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9996501094102943
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9979186900022767
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9990163189955839
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9991946913532821
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9980242960897067
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9994299349243786
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9982734028786407
+    },
+    {
+      "file": "shona07.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.998638880342699
+    },
+    {
+      "file": "shona08.wav",
+      "label": "target",
+      "score": 0.9999916956381489
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9992137188875643
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9974393284557197
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9999620592058795
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.995366282329831
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9994264185994688
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.999356386146804
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9988487967829542
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9992169143351848
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9981865597451363
+    },
+    {
+      "file": "shona08.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9998515825615849
+    },
+    {
+      "file": "shona10.wav",
+      "label": "target",
+      "score": 0.9999891195573094
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9980354329950022
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.998538582358932
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9982803318421872
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9994084198297977
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "ijaw11.wav",
+      "label": "impostor",
+      "score": 0.9985764367910738
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9983899904323278
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.998986560167936
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9984585727659554
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9989840007577564
+    },
+    {
+      "file": "shona10.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9999575971952688
+    },
+    {
+      "file": "shona11.wav",
+      "label": "target",
+      "score": 0.9999855360630956
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9987158278307584
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9980747820815916
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9987157869251004
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9982867884329409
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9983856094883743
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9988987090151553
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9992238747826735
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "shona12.wav",
+      "label": "impostor",
+      "score": 0.9996322906329871
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9999374991938954
+    },
+    {
+      "file": "shona11.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9999153762729154
+    },
+    {
+      "file": "shona12.wav",
+      "label": "target",
+      "score": 0.999992781841162
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9995462791142324
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.999473124871877
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9992979815570469
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9991040586036546
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9972485223981358
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9993625887472184
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9996336359643534
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9997613917960201
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9992722728066198
+    },
+    {
+      "file": "shona12.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9995130745361753
+    },
+    {
+      "file": "shona13.wav",
+      "label": "target",
+      "score": 0.9999898021116371
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.998975637890777
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.9989915749110903
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9994642946019145
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9981283373988719
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9999380097650455
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9987697478882112
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9998329850255739
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9987933593242921
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9954232537016312
+    },
+    {
+      "file": "shona13.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9982629311513227
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "label": "target",
+      "score": 0.9999929496622375
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9990359475967252
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9992931889816001
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9991496380886302
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.998877775229996
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9992678310905769
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9983155221009663
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9987351932465492
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9979978042564712
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9981210838003534
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9995054751199257
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "label": "target",
+      "score": 0.9999945149947511
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9988804288614055
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.99954154589483
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9993838654827577
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "yoruba06.wav",
+      "label": "impostor",
+      "score": 0.9988567590709544
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9996063389376065
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9983900331929004
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9992194838523493
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "ijaw11.wav",
+      "label": "impostor",
+      "score": 0.9992350291270675
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9993586959944666
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9994190591117378
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "label": "target",
+      "score": 0.999989383441467
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9976455923140338
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9981768719961587
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9993682318942911
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.999713808612259
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9992054835453501
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.999641211342061
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9989452755645046
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.997970511941204
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "ijaw01.wav",
+      "label": "impostor",
+      "score": 0.9993756718666609
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9990637231057744
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "label": "target",
+      "score": 0.9999884617370465
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9990102769589528
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9991130992284686
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9976619732597019
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9996362151132689
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9968824765825011
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9991515689434582
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.998989563284241
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9987837068741061
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9996667484704898
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9990298879706683
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "label": "target",
+      "score": 0.9999867022192681
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9974730109669125
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "shona12.wav",
+      "label": "impostor",
+      "score": 0.9995442129129466
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9992719953818381
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9991533124468821
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9975901040805966
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.999381417752549
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9978780576841232
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9990241810097995
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.999950177855064
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9984957481447548
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "label": "target",
+      "score": 0.9999932349000434
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9993068792055506
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9989761133902919
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9983490864352416
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9990462166173933
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9982750651713348
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9977694654709506
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9982426851406342
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9991398196792642
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9994208225720842
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9985525465501263
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "label": "target",
+      "score": 0.999992022228926
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9990951186487078
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9984212718003046
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9988007377762861
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9996256405975792
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9992736379260869
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9994045386255739
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9983547705862778
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9994443364856628
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.9992403809272066
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9993898039152704
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "label": "target",
+      "score": 0.9999930401897484
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9996020912691618
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9986710789162514
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.998554322781688
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.998724201194823
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9981689817499542
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9997419701211474
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9990409861257792
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9979278552582634
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9994199509248776
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "impostor_ref": "shona08.wav",
+      "label": "impostor",
+      "score": 0.9989560879508115
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "label": "target",
+      "score": 0.9999883805390599
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "ijaw11.wav",
+      "label": "impostor",
+      "score": 0.9991599066734234
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9996154418085657
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9997162004442514
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "zulu12.wav",
+      "label": "impostor",
+      "score": 0.9994107979813458
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9990511804328068
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9997743254835272
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9987004567783797
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9998552808170392
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.99808199917087
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9990290806565019
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "label": "target",
+      "score": 0.9999951371907627
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9992059947809796
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9994392765757916
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9990892987747894
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9996109953645662
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9990524085163036
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9994972728724112
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9995160250716524
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9964321270507945
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9989073994055109
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9982010240958559
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "label": "target",
+      "score": 0.999992808083785
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.999660633576589
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9974827076302273
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9980647262416362
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9961520746988863
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9994491289601156
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "zulu12.wav",
+      "label": "impostor",
+      "score": 0.9993161196158729
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9994828973726068
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9988963789125401
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9989418513019774
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9992029017838383
+    },
+    {
+      "file": "swahili03.wav",
+      "label": "target",
+      "score": 0.9999883068909435
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9964732335598244
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9991339726538074
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9986555772370828
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9986627977681712
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.999511636494947
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9994500571881784
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9970040504685818
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9984782266123189
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9989852379726454
+    },
+    {
+      "file": "swahili03.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9980446923764121
+    },
+    {
+      "file": "tswana02.wav",
+      "label": "target",
+      "score": 0.9999504466893028
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9987807912000415
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9987489038669992
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9985959679136818
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9970853549513097
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9990782362011237
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.998415243972069
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9989485788826196
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9983056316005775
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9986703021738017
+    },
+    {
+      "file": "tswana02.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9993763074097428
+    },
+    {
+      "file": "tswana04.wav",
+      "label": "target",
+      "score": 0.9999812266622214
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9992516640228079
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9978926424388372
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.998913577284263
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9980058200961761
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9978917366485669
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.9975830518418872
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.998803977054534
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9984360009022512
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9987655236297475
+    },
+    {
+      "file": "tswana04.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9992198275329853
+    },
+    {
+      "file": "tswana06.wav",
+      "label": "target",
+      "score": 0.9999835036234661
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9973275837489812
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9966754963477662
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9962281003798903
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9962847038541949
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9951717723736705
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "shona12.wav",
+      "label": "impostor",
+      "score": 0.9949993867384334
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9980389056079362
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.995729267309487
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9963002948837105
+    },
+    {
+      "file": "tswana06.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9989084562521391
+    },
+    {
+      "file": "tswana07.wav",
+      "label": "target",
+      "score": 0.9999782327685856
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9945329433691894
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9986058212515545
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9955332323932201
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.998583070871825
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.997548015551264
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.993682166176848
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9982877995150745
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9987058466502627
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.9982326219020322
+    },
+    {
+      "file": "tswana07.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9981383351406552
+    },
+    {
+      "file": "tswana08.wav",
+      "label": "target",
+      "score": 0.9999839450959077
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9980111856928399
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9987864762249486
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9962316428198085
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9997293364983275
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "shona13.wav",
+      "label": "impostor",
+      "score": 0.9985270438268098
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9991050689110841
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9988646847093827
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9991583046596728
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.999624519517712
+    },
+    {
+      "file": "tswana08.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9984106495148783
+    },
+    {
+      "file": "tswana09.wav",
+      "label": "target",
+      "score": 0.9999912932237698
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9954646043510442
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9972655905458132
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9983532506654529
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9984234964891665
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9965917812672992
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9960292977244773
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9987834503498945
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9982548715909464
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9996176082933871
+    },
+    {
+      "file": "tswana09.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9981514564242219
+    },
+    {
+      "file": "tswana10.wav",
+      "label": "target",
+      "score": 0.9999849038875261
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "zulu12.wav",
+      "label": "impostor",
+      "score": 0.9983117048389377
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9967023311634111
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9982605223232641
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.997552007409299
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9961062808063841
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9974854626011831
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9983544428803335
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9983540548118658
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9973594916758897
+    },
+    {
+      "file": "tswana10.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9983589606742103
+    },
+    {
+      "file": "tswana11.wav",
+      "label": "target",
+      "score": 0.9999787189106859
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9988949703473542
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9965423286513966
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9989808173256505
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9980445405515452
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "ijaw01.wav",
+      "label": "impostor",
+      "score": 0.9991776652604059
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9979438240641578
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9963540956053677
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9997415344667308
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9998050303881028
+    },
+    {
+      "file": "tswana11.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9987939646378712
+    },
+    {
+      "file": "tswana12.wav",
+      "label": "target",
+      "score": 0.9999522860563184
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.998476017898593
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9956992264919122
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9962006999312684
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.995112185813074
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9967875332611337
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9972224563097822
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9970236335525571
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9987065627592644
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9974206689790731
+    },
+    {
+      "file": "tswana12.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9963381627774408
+    },
+    {
+      "file": "unknown03.wav",
+      "label": "target",
+      "score": 0.9999915705622038
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9991263205860208
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9985593265102779
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9969743463964733
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9986415989559645
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9958494331415915
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "tswana09.wav",
+      "label": "impostor",
+      "score": 0.9968190079811609
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9980869282483857
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9992738868969037
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "ijaw01.wav",
+      "label": "impostor",
+      "score": 0.9994889233992854
+    },
+    {
+      "file": "unknown03.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9973084737946804
+    },
+    {
+      "file": "unknown05.wav",
+      "label": "target",
+      "score": 0.9999889592160203
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "shona08.wav",
+      "label": "impostor",
+      "score": 0.9994058801931089
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9996202252604613
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9973501006686886
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9995505282676077
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9957666948417871
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9993395875132898
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9991405670145969
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9984095226934449
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9978850006878028
+    },
+    {
+      "file": "unknown05.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9995352376146458
+    },
+    {
+      "file": "yoruba01.wav",
+      "label": "target",
+      "score": 0.9999905319905888
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9970855001728076
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9988749505489642
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9986629316939357
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9986465151299305
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9980503840458803
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.99565392992363
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.998727168199282
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9977754583905931
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9968431972606302
+    },
+    {
+      "file": "yoruba01.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9974491044727656
+    },
+    {
+      "file": "yoruba03.wav",
+      "label": "target",
+      "score": 0.9999549440526638
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9995190955558564
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9949424410506787
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9992481472310826
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9997005541549022
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9988286523140153
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.999659116278061
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9989980275023413
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9984828950399092
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "shona13.wav",
+      "label": "impostor",
+      "score": 0.9990785984914992
+    },
+    {
+      "file": "yoruba03.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.999554402792137
+    },
+    {
+      "file": "yoruba04.wav",
+      "label": "target",
+      "score": 0.9999935678988549
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9984065912674667
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9958849726378616
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9986778730631292
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9947523157655498
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "shona12.wav",
+      "label": "impostor",
+      "score": 0.998479952173331
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9980813751375845
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9993090809932241
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9975718282390336
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9982560669437905
+    },
+    {
+      "file": "yoruba04.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9991430693520356
+    },
+    {
+      "file": "yoruba05.wav",
+      "label": "target",
+      "score": 0.9999574942203557
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9948995973104557
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "tswana11.wav",
+      "label": "impostor",
+      "score": 0.9992798739827676
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9987099296086271
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9993278955945395
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9992374457236012
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9993448323167826
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9994383095200112
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9996223311434448
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "ijaw11.wav",
+      "label": "impostor",
+      "score": 0.9997948411225139
+    },
+    {
+      "file": "yoruba05.wav",
+      "impostor_ref": "shona11.wav",
+      "label": "impostor",
+      "score": 0.9983706527592845
+    },
+    {
+      "file": "yoruba06.wav",
+      "label": "target",
+      "score": 0.9999869597563498
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9980162918467413
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.9977929600803979
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "swahili,_kamba06.wav",
+      "label": "impostor",
+      "score": 0.9985501350285451
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9981560510895688
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "shona13.wav",
+      "label": "impostor",
+      "score": 0.9980113535871526
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.997404796808889
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9968659940417903
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9995961592903791
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9988566087608353
+    },
+    {
+      "file": "yoruba06.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9973998910222402
+    },
+    {
+      "file": "yoruba08.wav",
+      "label": "target",
+      "score": 0.9999644966503762
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9985004359161469
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9995131354862665
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9991470866396882
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9985056158811334
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9968269066238079
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9985403860748181
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9997036355823592
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9986483680769638
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9996822950723108
+    },
+    {
+      "file": "yoruba08.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9967889444703643
+    },
+    {
+      "file": "yoruba09.wav",
+      "label": "target",
+      "score": 0.9999822269264136
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.9958864856994709
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9977645727925644
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9967819912077766
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9981828561169308
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9975178285022197
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "ijaw12.wav",
+      "label": "impostor",
+      "score": 0.9973188659437983
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.9983699950769911
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9978980850380554
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.9973792277467995
+    },
+    {
+      "file": "yoruba09.wav",
+      "impostor_ref": "ijaw04.wav",
+      "label": "impostor",
+      "score": 0.9979280643105569
+    },
+    {
+      "file": "yoruba11.wav",
+      "label": "target",
+      "score": 0.9999946169635288
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.99961899914979
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "zulu06.wav",
+      "label": "impostor",
+      "score": 0.997638352354968
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "ijaw12.wav",
+      "label": "impostor",
+      "score": 0.9996593612457755
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "tswana02.wav",
+      "label": "impostor",
+      "score": 0.9984253041743527
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9993077047876824
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9991992274895019
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9979240779455227
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9971997509185022
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "shona10.wav",
+      "label": "impostor",
+      "score": 0.9990281348121465
+    },
+    {
+      "file": "yoruba11.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.999370004087001
+    },
+    {
+      "file": "yoruba12.wav",
+      "label": "target",
+      "score": 0.9999917408671212
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9989939076985509
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9973529614092893
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9997831151247296
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "ijaw10.wav",
+      "label": "impostor",
+      "score": 0.9982285001749447
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9986149433968619
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9939286255970912
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9972886038830189
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9980618784451395
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9997419776740254
+    },
+    {
+      "file": "yoruba12.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9979234958026828
+    },
+    {
+      "file": "zulu01.wav",
+      "label": "target",
+      "score": 0.9999818195829777
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.997848538224704
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9989141935054688
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9967095537390988
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9985642429362429
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9991688807383544
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9992120042007462
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "ijaw09.wav",
+      "label": "impostor",
+      "score": 0.9990773727736479
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.997875446750975
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "shona05.wav",
+      "label": "impostor",
+      "score": 0.9980954004995808
+    },
+    {
+      "file": "zulu01.wav",
+      "impostor_ref": "ijaw07.wav",
+      "label": "impostor",
+      "score": 0.9987490687049629
+    },
+    {
+      "file": "zulu02.wav",
+      "label": "target",
+      "score": 0.9999876524085493
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9989809234323896
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9988612642645833
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9991511190132314
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "shona02.wav",
+      "label": "impostor",
+      "score": 0.9990966797390315
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.9991420445052019
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9991637032461628
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "yoruba04.wav",
+      "label": "impostor",
+      "score": 0.9980040745743259
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9993577098304145
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.9992711832739323
+    },
+    {
+      "file": "zulu02.wav",
+      "impostor_ref": "tswana06.wav",
+      "label": "impostor",
+      "score": 0.9936362345021901
+    },
+    {
+      "file": "zulu03.wav",
+      "label": "target",
+      "score": 0.9999804797899559
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9991678825446806
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9993417287421633
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "tswana10.wav",
+      "label": "impostor",
+      "score": 0.9988421689002016
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.9970857521926086
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9972768654296769
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9977118627100263
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9974070598492961
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "yoruba11.wav",
+      "label": "impostor",
+      "score": 0.9985050903882393
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "shona07.wav",
+      "label": "impostor",
+      "score": 0.9986685489515243
+    },
+    {
+      "file": "zulu03.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.9975142294813385
+    },
+    {
+      "file": "zulu04.wav",
+      "label": "target",
+      "score": 0.9999591129795271
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "yoruba03.wav",
+      "label": "impostor",
+      "score": 0.9988422433204036
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "ijaw05.wav",
+      "label": "impostor",
+      "score": 0.9976477262454723
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9974692615146591
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9956434308972486
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9987941577713106
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9980926360023858
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9968675929538613
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "shona13.wav",
+      "label": "impostor",
+      "score": 0.9982424082518164
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "zulu05.wav",
+      "label": "impostor",
+      "score": 0.9981167629488847
+    },
+    {
+      "file": "zulu04.wav",
+      "impostor_ref": "zulu12.wav",
+      "label": "impostor",
+      "score": 0.9970980598590672
+    },
+    {
+      "file": "zulu05.wav",
+      "label": "target",
+      "score": 0.9999682063689379
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "ijaw08.wav",
+      "label": "impostor",
+      "score": 0.9991763500038657
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9982583924280553
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9974562748256888
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "swahili,_kamba11.wav",
+      "label": "impostor",
+      "score": 0.999194789608857
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9995010569744012
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9989271636912026
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "hausa13.wav",
+      "label": "impostor",
+      "score": 0.9979848155705959
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9973166588065113
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "shona01.wav",
+      "label": "impostor",
+      "score": 0.9992684079356515
+    },
+    {
+      "file": "zulu05.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9988649158805747
+    },
+    {
+      "file": "zulu06.wav",
+      "label": "target",
+      "score": 0.9999348464124858
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "tswana12.wav",
+      "label": "impostor",
+      "score": 0.9935872932040601
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9978613986234119
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "yoruba09.wav",
+      "label": "impostor",
+      "score": 0.9961282022951763
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "yoruba05.wav",
+      "label": "impostor",
+      "score": 0.9979742535154775
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "zulu01.wav",
+      "label": "impostor",
+      "score": 0.9971863814720894
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9979765582012949
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "swahili,_kamba05.wav",
+      "label": "impostor",
+      "score": 0.9981781263213022
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9978710613290116
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "swahili,_kamba12.wav",
+      "label": "impostor",
+      "score": 0.9975742967252265
+    },
+    {
+      "file": "zulu06.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9957266311358979
+    },
+    {
+      "file": "zulu09.wav",
+      "label": "target",
+      "score": 0.9999720766984199
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9991463274086027
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "tswana07.wav",
+      "label": "impostor",
+      "score": 0.9974487390739142
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "zulu03.wav",
+      "label": "impostor",
+      "score": 0.9977456377658536
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "swahili,_kamba10.wav",
+      "label": "impostor",
+      "score": 0.9994690348154989
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "swahili,_kamba01.wav",
+      "label": "impostor",
+      "score": 0.9993376023258449
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "tswana04.wav",
+      "label": "impostor",
+      "score": 0.9982209140003935
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "unknown03.wav",
+      "label": "impostor",
+      "score": 0.9992548619567363
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "zulu11.wav",
+      "label": "impostor",
+      "score": 0.9989233751059852
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "swahili,_kamba02.wav",
+      "label": "impostor",
+      "score": 0.9991265018755731
+    },
+    {
+      "file": "zulu09.wav",
+      "impostor_ref": "tswana08.wav",
+      "label": "impostor",
+      "score": 0.9988012935010883
+    },
+    {
+      "file": "zulu11.wav",
+      "label": "target",
+      "score": 0.9999658587444413
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "unknown05.wav",
+      "label": "impostor",
+      "score": 0.9986955454529401
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "zulu09.wav",
+      "label": "impostor",
+      "score": 0.9991428803845903
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "shona06.wav",
+      "label": "impostor",
+      "score": 0.9990225465256939
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "igbo01.wav",
+      "label": "impostor",
+      "score": 0.9983270535679939
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "hausa08.wav",
+      "label": "impostor",
+      "score": 0.9971451222372982
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "swahili,_kamba07.wav",
+      "label": "impostor",
+      "score": 0.9984800764944777
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "ijaw06.wav",
+      "label": "impostor",
+      "score": 0.998905850482978
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "shona04.wav",
+      "label": "impostor",
+      "score": 0.9990432629759947
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "zulu04.wav",
+      "label": "impostor",
+      "score": 0.9978563452733411
+    },
+    {
+      "file": "zulu11.wav",
+      "impostor_ref": "yoruba12.wav",
+      "label": "impostor",
+      "score": 0.9963817091260532
+    },
+    {
+      "file": "zulu12.wav",
+      "label": "target",
+      "score": 0.9999738245858898
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "shona03.wav",
+      "label": "impostor",
+      "score": 0.9996358963447385
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "swahili,_kamba09.wav",
+      "label": "impostor",
+      "score": 0.9986354691020578
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "swahili,_kamba08.wav",
+      "label": "impostor",
+      "score": 0.9994668325367942
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "ijaw02.wav",
+      "label": "impostor",
+      "score": 0.9992554918573285
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "zulu02.wav",
+      "label": "impostor",
+      "score": 0.999145599969635
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "yoruba01.wav",
+      "label": "impostor",
+      "score": 0.9986405543567897
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "yoruba08.wav",
+      "label": "impostor",
+      "score": 0.9987182695347263
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "swahili,_kamba03.wav",
+      "label": "impostor",
+      "score": 0.9995555929481817
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "swahili03.wav",
+      "label": "impostor",
+      "score": 0.9987280462027278
+    },
+    {
+      "file": "zulu12.wav",
+      "impostor_ref": "ijaw12.wav",
+      "label": "impostor",
+      "score": 0.9992545172271434
+    }
+  ]
+}

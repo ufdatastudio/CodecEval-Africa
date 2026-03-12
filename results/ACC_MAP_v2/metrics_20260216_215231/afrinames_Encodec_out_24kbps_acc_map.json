@@ -1,0 +1,1989 @@
+{
+  "metric": "acc_map",
+  "metrics": {
+    "acc": 1.0,
+    "acc_percent": 100.0,
+    "acc_ci95": [
+      1.0,
+      1.0
+    ],
+    "acc_percent_ci95": [
+      100.0,
+      100.0
+    ],
+    "map": 1.0,
+    "map_percent": 100.0,
+    "map_ci95": [
+      1.0,
+      1.0
+    ],
+    "map_percent_ci95": [
+      100.0,
+      100.0
+    ],
+    "mrr": 1.0
+  },
+  "model_type": "mfcc",
+  "model_type_requested": "mfcc",
+  "reference_dir": "data/afri_names_150_flat",
+  "degraded_dir": "outputs/afrinames/Encodec_outputs/out_24kbps",
+  "timestamp": "2026-02-16T22:28:51.187937",
+  "num_reference_files": 150,
+  "num_degraded_files": 150,
+  "num_matched_files": 150,
+  "num_usable_files": 150,
+  "bootstrap_samples": 200,
+  "num_queries": 150,
+  "per_file": [
+    {
+      "file": "akan01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan01.wav",
+        "akan12.wav",
+        "swahili03.wav",
+        "akan06.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "akan02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan02.wav",
+        "akan07.wav",
+        "igbo11.wav",
+        "akan10.wav",
+        "igbo09.wav"
+      ]
+    },
+    {
+      "file": "akan03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan03.wav",
+        "igbo09.wav",
+        "akan05.wav",
+        "hausa04.wav",
+        "ijaw06.wav"
+      ]
+    },
+    {
+      "file": "akan04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan04.wav",
+        "akan08.wav",
+        "akan05.wav",
+        "ijaw06.wav",
+        "ijaw12.wav"
+      ]
+    },
+    {
+      "file": "akan05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan05.wav",
+        "ijaw06.wav",
+        "ijaw05.wav",
+        "akan04.wav",
+        "ijaw11.wav"
+      ]
+    },
+    {
+      "file": "akan06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan06.wav",
+        "akan12.wav",
+        "akan10.wav",
+        "akan01.wav",
+        "akan03.wav"
+      ]
+    },
+    {
+      "file": "akan07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan07.wav",
+        "akan02.wav",
+        "igbo11.wav",
+        "akan10.wav",
+        "igbo09.wav"
+      ]
+    },
+    {
+      "file": "akan08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan08.wav",
+        "akan04.wav",
+        "ijaw12.wav",
+        "ijaw05.wav",
+        "hausa10.wav"
+      ]
+    },
+    {
+      "file": "akan09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan09.wav",
+        "akan02.wav",
+        "shona04.wav",
+        "shona13.wav",
+        "akan11.wav"
+      ]
+    },
+    {
+      "file": "akan10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan10.wav",
+        "akan06.wav",
+        "unknown10.wav",
+        "akan12.wav",
+        "akan07.wav"
+      ]
+    },
+    {
+      "file": "akan11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan11.wav",
+        "akan02.wav",
+        "unknown07.wav",
+        "akan10.wav",
+        "akan09.wav"
+      ]
+    },
+    {
+      "file": "akan12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan12.wav",
+        "akan06.wav",
+        "unknown02.wav",
+        "akan10.wav",
+        "akan01.wav"
+      ]
+    },
+    {
+      "file": "akan13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "akan13.wav",
+        "akan12.wav",
+        "unknown10.wav",
+        "akan10.wav",
+        "unknown02.wav"
+      ]
+    },
+    {
+      "file": "hausa01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa01.wav",
+        "hausa12.wav",
+        "hausa03.wav",
+        "hausa07.wav",
+        "ijaw09.wav"
+      ]
+    },
+    {
+      "file": "hausa02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa02.wav",
+        "hausa10.wav",
+        "hausa07.wav",
+        "hausa03.wav",
+        "hausa12.wav"
+      ]
+    },
+    {
+      "file": "hausa03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa03.wav",
+        "hausa10.wav",
+        "hausa12.wav",
+        "hausa07.wav",
+        "ijaw09.wav"
+      ]
+    },
+    {
+      "file": "hausa04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa04.wav",
+        "hausa06.wav",
+        "ijaw11.wav",
+        "ijaw05.wav",
+        "ijaw02.wav"
+      ]
+    },
+    {
+      "file": "hausa05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa05.wav",
+        "akan02.wav",
+        "akan09.wav",
+        "swahili,_kikuyu05.wav",
+        "swahili,_kamba12.wav"
+      ]
+    },
+    {
+      "file": "hausa06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa06.wav",
+        "hausa04.wav",
+        "ijaw07.wav",
+        "zulu07.wav",
+        "ijaw10.wav"
+      ]
+    },
+    {
+      "file": "hausa07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa07.wav",
+        "hausa03.wav",
+        "hausa12.wav",
+        "hausa02.wav",
+        "hausa10.wav"
+      ]
+    },
+    {
+      "file": "hausa08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa08.wav",
+        "hausa13.wav",
+        "igbo10.wav",
+        "swahili,_kikuyu06.wav",
+        "igbo13.wav"
+      ]
+    },
+    {
+      "file": "hausa09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa09.wav",
+        "akan02.wav",
+        "akan11.wav",
+        "akan09.wav",
+        "hausa08.wav"
+      ]
+    },
+    {
+      "file": "hausa10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa10.wav",
+        "hausa02.wav",
+        "hausa03.wav",
+        "hausa12.wav",
+        "hausa07.wav"
+      ]
+    },
+    {
+      "file": "hausa11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa11.wav",
+        "unknown05.wav",
+        "unknown02.wav",
+        "ijaw01.wav",
+        "unknown04.wav"
+      ]
+    },
+    {
+      "file": "hausa12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa12.wav",
+        "hausa03.wav",
+        "hausa10.wav",
+        "hausa07.wav",
+        "hausa01.wav"
+      ]
+    },
+    {
+      "file": "hausa13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "hausa13.wav",
+        "hausa08.wav",
+        "hausa05.wav",
+        "igbo10.wav",
+        "igbo13.wav"
+      ]
+    },
+    {
+      "file": "igbo01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo01.wav",
+        "igbo08.wav",
+        "igbo05.wav",
+        "igbo10.wav",
+        "igbo13.wav"
+      ]
+    },
+    {
+      "file": "igbo02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo02.wav",
+        "igbo12.wav",
+        "igbo03.wav",
+        "akan13.wav",
+        "swahili12.wav"
+      ]
+    },
+    {
+      "file": "igbo03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo03.wav",
+        "igbo12.wav",
+        "igbo02.wav",
+        "swahili12.wav",
+        "swahili08.wav"
+      ]
+    },
+    {
+      "file": "igbo04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo04.wav",
+        "igbo06.wav",
+        "igbo05.wav",
+        "ijaw13.wav",
+        "igbo07.wav"
+      ]
+    },
+    {
+      "file": "igbo05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo05.wav",
+        "igbo08.wav",
+        "igbo01.wav",
+        "igbo04.wav",
+        "igbo10.wav"
+      ]
+    },
+    {
+      "file": "igbo06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo06.wav",
+        "akan07.wav",
+        "ijaw13.wav",
+        "igbo07.wav",
+        "igbo13.wav"
+      ]
+    },
+    {
+      "file": "igbo07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo07.wav",
+        "igbo06.wav",
+        "igbo04.wav",
+        "igbo13.wav",
+        "igbo05.wav"
+      ]
+    },
+    {
+      "file": "igbo08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo08.wav",
+        "igbo10.wav",
+        "igbo13.wav",
+        "igbo01.wav",
+        "igbo05.wav"
+      ]
+    },
+    {
+      "file": "igbo09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo09.wav",
+        "akan03.wav",
+        "igbo11.wav",
+        "akan07.wav",
+        "yoruba11.wav"
+      ]
+    },
+    {
+      "file": "igbo10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo10.wav",
+        "igbo08.wav",
+        "igbo13.wav",
+        "igbo05.wav",
+        "igbo01.wav"
+      ]
+    },
+    {
+      "file": "igbo11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo11.wav",
+        "igbo09.wav",
+        "akan07.wav",
+        "akan03.wav",
+        "akan02.wav"
+      ]
+    },
+    {
+      "file": "igbo12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo12.wav",
+        "igbo02.wav",
+        "igbo03.wav",
+        "swahili02.wav",
+        "swahili12.wav"
+      ]
+    },
+    {
+      "file": "igbo13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "igbo13.wav",
+        "igbo08.wav",
+        "igbo06.wav",
+        "igbo10.wav",
+        "akan07.wav"
+      ]
+    },
+    {
+      "file": "ijaw01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw01.wav",
+        "unknown05.wav",
+        "ijaw10.wav",
+        "unknown02.wav",
+        "ijaw07.wav"
+      ]
+    },
+    {
+      "file": "ijaw02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw02.wav",
+        "ijaw06.wav",
+        "ijaw05.wav",
+        "ijaw09.wav",
+        "ijaw12.wav"
+      ]
+    },
+    {
+      "file": "ijaw03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw03.wav",
+        "swahili13.wav",
+        "hausa04.wav",
+        "swahili09.wav",
+        "swahili04.wav"
+      ]
+    },
+    {
+      "file": "ijaw04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw04.wav",
+        "swahili09.wav",
+        "swahili01.wav",
+        "swahili04.wav",
+        "swahili10.wav"
+      ]
+    },
+    {
+      "file": "ijaw05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw05.wav",
+        "ijaw06.wav",
+        "ijaw09.wav",
+        "ijaw02.wav",
+        "ijaw11.wav"
+      ]
+    },
+    {
+      "file": "ijaw06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw06.wav",
+        "ijaw05.wav",
+        "ijaw02.wav",
+        "ijaw09.wav",
+        "akan05.wav"
+      ]
+    },
+    {
+      "file": "ijaw07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw07.wav",
+        "ijaw01.wav",
+        "unknown11.wav",
+        "hausa06.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "ijaw08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw08.wav",
+        "swahili04.wav",
+        "swahili,_kamba11.wav",
+        "ijaw04.wav",
+        "tswana03.wav"
+      ]
+    },
+    {
+      "file": "ijaw09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw09.wav",
+        "ijaw05.wav",
+        "ijaw02.wav",
+        "ijaw06.wav",
+        "ijaw11.wav"
+      ]
+    },
+    {
+      "file": "ijaw10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw10.wav",
+        "ijaw01.wav",
+        "unknown02.wav",
+        "ijaw12.wav",
+        "unknown05.wav"
+      ]
+    },
+    {
+      "file": "ijaw11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw11.wav",
+        "ijaw05.wav",
+        "ijaw09.wav",
+        "ijaw06.wav",
+        "ijaw02.wav"
+      ]
+    },
+    {
+      "file": "ijaw12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw12.wav",
+        "ijaw02.wav",
+        "ijaw06.wav",
+        "ijaw05.wav",
+        "ijaw09.wav"
+      ]
+    },
+    {
+      "file": "ijaw13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "ijaw13.wav",
+        "igbo06.wav",
+        "ijaw07.wav",
+        "unknown09.wav",
+        "unknown11.wav"
+      ]
+    },
+    {
+      "file": "shona01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona01.wav",
+        "shona12.wav",
+        "shona04.wav",
+        "shona06.wav",
+        "shona08.wav"
+      ]
+    },
+    {
+      "file": "shona02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona02.wav",
+        "shona09.wav",
+        "shona10.wav",
+        "shona13.wav",
+        "shona03.wav"
+      ]
+    },
+    {
+      "file": "shona03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona03.wav",
+        "shona05.wav",
+        "shona07.wav",
+        "shona13.wav",
+        "shona10.wav"
+      ]
+    },
+    {
+      "file": "shona04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona04.wav",
+        "shona12.wav",
+        "shona01.wav",
+        "shona06.wav",
+        "ijaw10.wav"
+      ]
+    },
+    {
+      "file": "shona05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona05.wav",
+        "shona03.wav",
+        "shona07.wav",
+        "shona10.wav",
+        "shona13.wav"
+      ]
+    },
+    {
+      "file": "shona06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona06.wav",
+        "shona08.wav",
+        "shona12.wav",
+        "shona04.wav",
+        "shona01.wav"
+      ]
+    },
+    {
+      "file": "shona07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona07.wav",
+        "shona03.wav",
+        "shona05.wav",
+        "shona10.wav",
+        "shona13.wav"
+      ]
+    },
+    {
+      "file": "shona08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona08.wav",
+        "shona06.wav",
+        "shona01.wav",
+        "shona12.wav",
+        "shona09.wav"
+      ]
+    },
+    {
+      "file": "shona09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona09.wav",
+        "shona06.wav",
+        "shona02.wav",
+        "shona08.wav",
+        "shona03.wav"
+      ]
+    },
+    {
+      "file": "shona10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona10.wav",
+        "shona07.wav",
+        "shona03.wav",
+        "shona05.wav",
+        "shona13.wav"
+      ]
+    },
+    {
+      "file": "shona11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona11.wav",
+        "shona03.wav",
+        "shona10.wav",
+        "shona13.wav",
+        "shona07.wav"
+      ]
+    },
+    {
+      "file": "shona12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona12.wav",
+        "shona04.wav",
+        "shona01.wav",
+        "shona06.wav",
+        "shona08.wav"
+      ]
+    },
+    {
+      "file": "shona13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "shona13.wav",
+        "shona03.wav",
+        "shona07.wav",
+        "shona10.wav",
+        "shona05.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba01.wav",
+        "swahili,_kamba08.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba09.wav",
+        "tswana11.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba02.wav",
+        "swahili10.wav",
+        "swahili,_kamba11.wav",
+        "ijaw04.wav",
+        "swahili,_kamba03.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba03.wav",
+        "swahili,_kamba05.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba06.wav",
+        "swahili,_kamba08.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba04.wav",
+        "tswana08.wav",
+        "tswana11.wav",
+        "tswana05.wav",
+        "ijaw02.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba05.wav",
+        "swahili,_kamba03.wav",
+        "swahili,_kamba06.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba07.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba06.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba03.wav",
+        "swahili,_kamba05.wav",
+        "swahili,_kamba08.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba07.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba06.wav",
+        "swahili,_kamba01.wav",
+        "swahili,_kamba08.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba08.wav",
+        "swahili,_kamba01.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba06.wav",
+        "swahili,_kamba03.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba09.wav",
+        "swahili,_kamba01.wav",
+        "tswana05.wav",
+        "hausa12.wav",
+        "hausa01.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba10.wav",
+        "swahili,_kamba08.wav",
+        "swahili,_kamba06.wav",
+        "swahili,_kamba01.wav",
+        "swahili,_kamba03.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba11.wav",
+        "swahili04.wav",
+        "swahili09.wav",
+        "swahili,_kamba04.wav",
+        "swahili,_kamba02.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kamba12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kamba12.wav",
+        "swahili,_kamba08.wav",
+        "swahili,_kikuyu01.wav",
+        "swahili,_kamba03.wav",
+        "tswana11.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu01.wav",
+        "swahili,_kamba04.wav",
+        "tswana11.wav",
+        "swahili,_kamba12.wav",
+        "tswana05.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu02.wav",
+        "swahili,_kikuyu07.wav",
+        "swahili,_kikuyu11.wav",
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu12.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu03.wav",
+        "swahili,_kikuyu05.wav",
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu06.wav",
+        "swahili,_kikuyu10.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu08.wav",
+        "swahili,_kikuyu11.wav",
+        "swahili,_kikuyu09.wav",
+        "swahili,_kikuyu02.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu05.wav",
+        "swahili,_kikuyu06.wav",
+        "swahili,_kikuyu03.wav",
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu11.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu06.wav",
+        "swahili,_kikuyu05.wav",
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu03.wav",
+        "swahili,_kikuyu10.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu07.wav",
+        "swahili,_kikuyu02.wav",
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu10.wav",
+        "swahili,_kikuyu06.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu08.wav",
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu09.wav",
+        "swahili,_kikuyu11.wav",
+        "tswana01.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu09.wav",
+        "swahili,_kikuyu08.wav",
+        "swahili,_kikuyu11.wav",
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu05.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu10.wav",
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu02.wav",
+        "swahili,_kikuyu06.wav",
+        "swahili,_kikuyu11.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu11.wav",
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu09.wav",
+        "swahili,_kikuyu08.wav",
+        "swahili,_kikuyu02.wav"
+      ]
+    },
+    {
+      "file": "swahili,_kikuyu12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili,_kikuyu12.wav",
+        "swahili,_kikuyu10.wav",
+        "swahili,_kikuyu02.wav",
+        "swahili,_kikuyu03.wav",
+        "swahili,_kikuyu07.wav"
+      ]
+    },
+    {
+      "file": "swahili01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili01.wav",
+        "swahili11.wav",
+        "swahili09.wav",
+        "swahili04.wav",
+        "swahili10.wav"
+      ]
+    },
+    {
+      "file": "swahili02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili02.wav",
+        "swahili12.wav",
+        "swahili08.wav",
+        "swahili13.wav",
+        "zulu08.wav"
+      ]
+    },
+    {
+      "file": "swahili03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili03.wav",
+        "swahili05.wav",
+        "unknown06.wav",
+        "akan01.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "swahili04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili04.wav",
+        "swahili09.wav",
+        "swahili01.wav",
+        "swahili10.wav",
+        "swahili11.wav"
+      ]
+    },
+    {
+      "file": "swahili05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili05.wav",
+        "swahili03.wav",
+        "ijaw11.wav",
+        "akan08.wav",
+        "zulu07.wav"
+      ]
+    },
+    {
+      "file": "swahili06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili06.wav",
+        "akan08.wav",
+        "akan04.wav",
+        "ijaw12.wav",
+        "ijaw06.wav"
+      ]
+    },
+    {
+      "file": "swahili07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili07.wav",
+        "hausa03.wav",
+        "ijaw05.wav",
+        "ijaw06.wav",
+        "ijaw09.wav"
+      ]
+    },
+    {
+      "file": "swahili08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili08.wav",
+        "swahili02.wav",
+        "swahili12.wav",
+        "swahili13.wav",
+        "zulu09.wav"
+      ]
+    },
+    {
+      "file": "swahili09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili09.wav",
+        "swahili01.wav",
+        "swahili10.wav",
+        "swahili04.wav",
+        "swahili11.wav"
+      ]
+    },
+    {
+      "file": "swahili10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili10.wav",
+        "swahili09.wav",
+        "swahili01.wav",
+        "swahili11.wav",
+        "swahili04.wav"
+      ]
+    },
+    {
+      "file": "swahili11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili11.wav",
+        "swahili01.wav",
+        "swahili09.wav",
+        "ijaw02.wav",
+        "swahili10.wav"
+      ]
+    },
+    {
+      "file": "swahili12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili12.wav",
+        "swahili02.wav",
+        "swahili08.wav",
+        "zulu08.wav",
+        "zulu09.wav"
+      ]
+    },
+    {
+      "file": "swahili13.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "swahili13.wav",
+        "hausa04.wav",
+        "hausa06.wav",
+        "ijaw03.wav",
+        "swahili04.wav"
+      ]
+    },
+    {
+      "file": "tswana01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana01.wav",
+        "swahili07.wav",
+        "tswana11.wav",
+        "ijaw06.wav",
+        "tswana08.wav"
+      ]
+    },
+    {
+      "file": "tswana02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana02.wav",
+        "swahili,_kikuyu11.wav",
+        "swahili,_kikuyu10.wav",
+        "swahili,_kikuyu02.wav",
+        "swahili,_kikuyu04.wav"
+      ]
+    },
+    {
+      "file": "tswana03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana03.wav",
+        "swahili,_kamba07.wav",
+        "shona12.wav",
+        "swahili,_kamba10.wav",
+        "swahili,_kamba11.wav"
+      ]
+    },
+    {
+      "file": "tswana04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana04.wav",
+        "tswana01.wav",
+        "tswana07.wav",
+        "tswana09.wav",
+        "swahili,_kikuyu08.wav"
+      ]
+    },
+    {
+      "file": "tswana05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana05.wav",
+        "ijaw09.wav",
+        "tswana11.wav",
+        "swahili,_kamba04.wav",
+        "ijaw02.wav"
+      ]
+    },
+    {
+      "file": "tswana06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana06.wav",
+        "tswana12.wav",
+        "tswana07.wav",
+        "swahili,_kikuyu04.wav",
+        "tswana02.wav"
+      ]
+    },
+    {
+      "file": "tswana07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana07.wav",
+        "tswana09.wav",
+        "tswana04.wav",
+        "swahili,_kikuyu08.wav",
+        "swahili,_kikuyu04.wav"
+      ]
+    },
+    {
+      "file": "tswana08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana08.wav",
+        "swahili,_kamba04.wav",
+        "ijaw09.wav",
+        "tswana11.wav",
+        "swahili07.wav"
+      ]
+    },
+    {
+      "file": "tswana09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana09.wav",
+        "tswana07.wav",
+        "tswana04.wav",
+        "zulu01.wav",
+        "swahili,_kikuyu11.wav"
+      ]
+    },
+    {
+      "file": "tswana10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana10.wav",
+        "tswana01.wav",
+        "yoruba11.wav",
+        "swahili,_kikuyu03.wav",
+        "tswana08.wav"
+      ]
+    },
+    {
+      "file": "tswana11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana11.wav",
+        "swahili,_kamba04.wav",
+        "tswana05.wav",
+        "ijaw06.wav",
+        "tswana01.wav"
+      ]
+    },
+    {
+      "file": "tswana12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "tswana12.wav",
+        "tswana06.wav",
+        "tswana07.wav",
+        "swahili,_kikuyu04.wav",
+        "swahili,_kikuyu02.wav"
+      ]
+    },
+    {
+      "file": "unknown01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown01.wav",
+        "unknown08.wav",
+        "unknown12.wav",
+        "unknown06.wav",
+        "yoruba05.wav"
+      ]
+    },
+    {
+      "file": "unknown02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown02.wav",
+        "unknown04.wav",
+        "unknown05.wav",
+        "ijaw10.wav",
+        "ijaw01.wav"
+      ]
+    },
+    {
+      "file": "unknown03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown03.wav",
+        "unknown12.wav",
+        "unknown01.wav",
+        "zulu07.wav",
+        "yoruba05.wav"
+      ]
+    },
+    {
+      "file": "unknown04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown04.wav",
+        "unknown02.wav",
+        "akan05.wav",
+        "unknown07.wav",
+        "yoruba08.wav"
+      ]
+    },
+    {
+      "file": "unknown05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown05.wav",
+        "ijaw01.wav",
+        "unknown02.wav",
+        "unknown06.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "unknown06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown06.wav",
+        "unknown12.wav",
+        "unknown07.wav",
+        "unknown05.wav",
+        "yoruba05.wav"
+      ]
+    },
+    {
+      "file": "unknown07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown07.wav",
+        "unknown06.wav",
+        "unknown02.wav",
+        "unknown04.wav",
+        "unknown05.wav"
+      ]
+    },
+    {
+      "file": "unknown08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown08.wav",
+        "unknown01.wav",
+        "unknown07.wav",
+        "unknown12.wav",
+        "unknown06.wav"
+      ]
+    },
+    {
+      "file": "unknown09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown09.wav",
+        "unknown08.wav",
+        "unknown01.wav",
+        "ijaw07.wav",
+        "unknown12.wav"
+      ]
+    },
+    {
+      "file": "unknown10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown10.wav",
+        "unknown04.wav",
+        "unknown02.wav",
+        "akan10.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "unknown11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown11.wav",
+        "unknown12.wav",
+        "unknown07.wav",
+        "unknown05.wav",
+        "ijaw07.wav"
+      ]
+    },
+    {
+      "file": "unknown12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "unknown12.wav",
+        "unknown06.wav",
+        "unknown03.wav",
+        "yoruba05.wav",
+        "unknown11.wav"
+      ]
+    },
+    {
+      "file": "yoruba01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba01.wav",
+        "yoruba09.wav",
+        "yoruba06.wav",
+        "yoruba12.wav",
+        "yoruba04.wav"
+      ]
+    },
+    {
+      "file": "yoruba02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba02.wav",
+        "akan04.wav",
+        "unknown04.wav",
+        "unknown07.wav",
+        "unknown06.wav"
+      ]
+    },
+    {
+      "file": "yoruba03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba03.wav",
+        "yoruba05.wav",
+        "unknown07.wav",
+        "unknown11.wav",
+        "ijaw10.wav"
+      ]
+    },
+    {
+      "file": "yoruba04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba04.wav",
+        "yoruba12.wav",
+        "yoruba07.wav",
+        "yoruba01.wav",
+        "yoruba09.wav"
+      ]
+    },
+    {
+      "file": "yoruba05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba05.wav",
+        "unknown12.wav",
+        "yoruba03.wav",
+        "unknown06.wav",
+        "unknown07.wav"
+      ]
+    },
+    {
+      "file": "yoruba06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba06.wav",
+        "yoruba07.wav",
+        "yoruba01.wav",
+        "zulu03.wav",
+        "yoruba12.wav"
+      ]
+    },
+    {
+      "file": "yoruba07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba07.wav",
+        "yoruba04.wav",
+        "yoruba12.wav",
+        "yoruba06.wav",
+        "yoruba01.wav"
+      ]
+    },
+    {
+      "file": "yoruba08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba08.wav",
+        "unknown04.wav",
+        "hausa12.wav",
+        "ijaw05.wav",
+        "ijaw11.wav"
+      ]
+    },
+    {
+      "file": "yoruba09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba09.wav",
+        "yoruba01.wav",
+        "yoruba12.wav",
+        "yoruba06.wav",
+        "yoruba04.wav"
+      ]
+    },
+    {
+      "file": "yoruba10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba10.wav",
+        "hausa07.wav",
+        "hausa01.wav",
+        "hausa03.wav",
+        "hausa12.wav"
+      ]
+    },
+    {
+      "file": "yoruba11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba11.wav",
+        "tswana11.wav",
+        "ijaw06.wav",
+        "tswana05.wav",
+        "akan03.wav"
+      ]
+    },
+    {
+      "file": "yoruba12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "yoruba12.wav",
+        "yoruba04.wav",
+        "yoruba07.wav",
+        "yoruba09.wav",
+        "yoruba01.wav"
+      ]
+    },
+    {
+      "file": "zulu01.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu01.wav",
+        "akan05.wav",
+        "unknown04.wav",
+        "tswana01.wav",
+        "ijaw06.wav"
+      ]
+    },
+    {
+      "file": "zulu02.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu02.wav",
+        "tswana03.wav",
+        "zulu07.wav",
+        "shona12.wav",
+        "hausa06.wav"
+      ]
+    },
+    {
+      "file": "zulu03.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu03.wav",
+        "yoruba06.wav",
+        "yoruba07.wav",
+        "swahili,_kikuyu12.wav",
+        "yoruba01.wav"
+      ]
+    },
+    {
+      "file": "zulu04.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu04.wav",
+        "unknown09.wav",
+        "unknown08.wav",
+        "igbo04.wav",
+        "akan11.wav"
+      ]
+    },
+    {
+      "file": "zulu05.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu05.wav",
+        "zulu08.wav",
+        "shona02.wav",
+        "shona10.wav",
+        "tswana03.wav"
+      ]
+    },
+    {
+      "file": "zulu06.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu06.wav",
+        "shona01.wav",
+        "zulu09.wav",
+        "shona09.wav",
+        "shona08.wav"
+      ]
+    },
+    {
+      "file": "zulu07.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu07.wav",
+        "hausa01.wav",
+        "hausa06.wav",
+        "swahili05.wav",
+        "ijaw09.wav"
+      ]
+    },
+    {
+      "file": "zulu08.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu08.wav",
+        "zulu05.wav",
+        "swahili02.wav",
+        "swahili12.wav",
+        "shona10.wav"
+      ]
+    },
+    {
+      "file": "zulu09.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu09.wav",
+        "zulu10.wav",
+        "shona12.wav",
+        "shona06.wav",
+        "shona01.wav"
+      ]
+    },
+    {
+      "file": "zulu10.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu10.wav",
+        "shona04.wav",
+        "shona06.wav",
+        "shona13.wav",
+        "shona12.wav"
+      ]
+    },
+    {
+      "file": "zulu11.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu11.wav",
+        "akan01.wav",
+        "akan12.wav",
+        "akan06.wav",
+        "swahili12.wav"
+      ]
+    },
+    {
+      "file": "zulu12.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "zulu12.wav",
+        "shona07.wav",
+        "shona03.wav",
+        "shona05.wav",
+        "shona10.wav"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "metric": "acc_map",
+  "metrics": {
+    "acc": 1.0,
+    "acc_percent": 100.0,
+    "acc_ci95": [
+      1.0,
+      1.0
+    ],
+    "acc_percent_ci95": [
+      100.0,
+      100.0
+    ],
+    "map": 1.0,
+    "map_percent": 100.0,
+    "map_ci95": [
+      1.0,
+      1.0
+    ],
+    "map_percent_ci95": [
+      100.0,
+      100.0
+    ],
+    "mrr": 1.0
+  },
+  "model_type": "mfcc",
+  "model_type_requested": "mfcc",
+  "reference_dir": "/orange/ufdatastudios/c.okocha/Dataset/afrispeech_multilingual_wav",
+  "degraded_dir": "outputs/afrispeech_multilingual/DAC_outputs/out_24kbps",
+  "timestamp": "2026-02-16T22:34:17.963351",
+  "num_reference_files": 100,
+  "num_degraded_files": 8,
+  "num_matched_files": 8,
+  "num_usable_files": 8,
+  "bootstrap_samples": 200,
+  "num_queries": 8,
+  "per_file": [
+    {
+      "file": "common_voice_ig_30689630.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30689630.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689668.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30689668.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30689668.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689630.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690011.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690011.wav",
+        "common_voice_ig_30690505.wav",
+        "common_voice_ig_30690256.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690399.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690256.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690256.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690011.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30690505.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690345.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30689668.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689630.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690399.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30689668.wav",
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30689630.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690505.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690505.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30689630.wav",
+        "common_voice_ig_30690543.wav"
+      ]
+    },
+    {
+      "file": "common_voice_ig_30690543.wav",
+      "rank_of_correct": 1,
+      "reciprocal_rank": 1.0,
+      "top1_correct": true,
+      "top5_candidates": [
+        "common_voice_ig_30690543.wav",
+        "common_voice_ig_30690399.wav",
+        "common_voice_ig_30690345.wav",
+        "common_voice_ig_30689668.wav",
+        "common_voice_ig_30689630.wav"
+      ]
+    }
+  ]
+}
