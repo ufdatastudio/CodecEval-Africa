@@ -34,7 +34,7 @@
 
 **CodecEval-Africa** is a comprehensive benchmarking framework for evaluating state-of-the-art neural speech codecs on African-accented English, conversational audio, and multilingual African speech. This project provides:
 
-- **6 Neural Codecs** - Evaluation of leading speech compression models
+- **7 Neural Codecs** - Evaluation of leading speech compression models
 - **6 Quality Metrics** - Comprehensive perceptual and objective quality assessment
 - **African Speech Datasets** - Focused evaluation on African-accented English and multilingual African languages
 - **Multi-Bitrate Analysis** - Performance evaluation across various compression rates
@@ -44,7 +44,7 @@
 
 ## ✨ Features
 
-- 🎚️ **Multi-Codec Support** - EnCodec, DAC, LanguageCodec, UniCodec, SemantiCodec, WavTokenizer
+- 🎚️ **Multi-Codec Support** - EnCodec, DAC, LanguageCodec, UniCodec, SemantiCodec, FocalCodec, WavTokenizer
 - 📊 **Comprehensive Metrics** - NISQA, ViSQOL, DNSMOS, Speaker Similarity, Prosody, ASR WER
 - 🌍 **African Speech Focus** - Specialized evaluation on African-accented English and multilingual African language datasets
 - ⚡ **GPU Accelerated** - Optimized batch processing for SLURM clusters
@@ -63,6 +63,7 @@
 | **LanguageCodec** | ~6.6 kbps | Language model-based, 4 bandwidth variants | CPU |
 | **UniCodec** | Variable (~0.35 kbps default) | Unified framework, configurable bandwidth | GPU |
 | **SemantiCodec** | 0.31-1.40 kbps | Semantic-aware, ultra-low bitrate compression | CPU |
+| **FocalCodec** | 12.5, 25, 50 Hz variants | Rate-configurable codec with causal model options | GPU |
 | **WavTokenizer** | Token-based | Multiple token-rate models (40-75 tokens/sec) | GPU |
 
 ### Codec Details
@@ -109,6 +110,15 @@
 - **Bitrates**: 0.31, 0.63, 1.25, 0.33, 0.68, 1.40 kbps (6 configurations)
 - **Features**: Semantic-aware compression with attention mechanisms
 - **Use Case**: Ultra-low bitrate semantic compression
+
+</details>
+
+<details>
+<summary><b>FocalCodec</b> - Rate-Configurable Neural Codec</summary>
+
+- **Configurations**: 12.5 Hz, 25 Hz, 50 Hz variants (including causal settings)
+- **Features**: Flexible rate configurations, causal/non-causal model options
+- **Use Case**: Comparative evaluation across different temporal compression rates
 
 </details>
 
@@ -254,7 +264,7 @@ The conversion script:
 
 ### GPU Acceleration
 
-- **GPU-Accelerated Codecs**: EnCodec, DAC, UniCodec, WavTokenizer
+- **GPU-Accelerated Codecs**: EnCodec, DAC, UniCodec, FocalCodec, WavTokenizer
 - **CPU Codecs**: LanguageCodec, SemantiCodec
 - Batch scripts are pre-configured for SLURM GPU partitions
 
@@ -271,6 +281,7 @@ The conversion script:
 | LanguageCodec | 4 bandwidth variants (~6.6 kbps each) |
 | UniCodec | 4 bandwidth IDs (variable bitrates) |
 | SemantiCodec | 6 ultra-low bitrate configurations (0.31-1.40 kbps) |
+| FocalCodec | 12.5 Hz, 25 Hz, 50 Hz model variants (including causal configurations) |
 | WavTokenizer | Multiple token-rate models |
 
 ### Configuration Files
