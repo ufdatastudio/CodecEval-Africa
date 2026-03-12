@@ -1,0 +1,51 @@
+# Audio Quality Assessment Configuration
+
+# Metrics to enable/disable and their configurations
+metrics:
+  # NISQA - Non-Intrusive Speech Quality Assessment
+  nisqa:
+    enabled: true
+    model_path: null  # Use default if null
+  
+  # ViSQOL - Virtual Speech Quality Objective Listener  
+  visqol:
+    enabled: true
+    sample_rate: 16000
+    mode: "speech"  # or "audio"
+  
+  # DNSMOS - Deep Noise Suppression Mean Opinion Score
+  dnsmos:
+    enabled: true
+    model_path: null  # Use default if null
+  
+  # Speaker Similarity Assessment
+  speaker_similarity:
+    enabled: true
+    model_type: "mfcc"  # Options: "mfcc", "wavlm", "ecapa", "xvector"
+  
+  # Prosody Analysis
+  prosody:
+    enabled: true
+    sample_rate: 16000
+    f0_min: 50
+    f0_max: 400
+  
+  # ASR Impact Evaluation
+  asr:
+    enabled: true
+    model_name: "openai/whisper-base"  # or "openai/whisper-large-v3", "facebook/wav2vec2-base-960h"
+    language: "en"
+
+# Output configuration
+output:
+  format: "json"  # Options: "json", "yaml", "csv"
+  detailed: true  # Include detailed metrics or just summary scores
+  save_path: null  # Default output path (null = print to stdout)
+
+# Device configuration  
+device: "auto"  # Options: "auto", "cuda", "cpu"
+
+# Logging configuration
+logging:
+  level: "INFO"  # Options: "DEBUG", "INFO", "WARNING", "ERROR"
+  file: null  # Log to file (null = console only)
